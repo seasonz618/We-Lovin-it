@@ -1,3 +1,1 @@
-this is a STUPID project 
-for STUPID people 
-who do STUPID things
+guys please remember to switch to new first before commiting thank you 
