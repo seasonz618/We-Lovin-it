@@ -3,33 +3,41 @@ html {
     font-family: Arial, sans-serif;
 }
 #top nav ul { 
+    position: fixed;
     display: flex;
     list-style-type: none;
-    margin: 0;
     background-color: #ed0103;
+    margin: 0;
     width: 100%;
     height: 90px;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 4;
-}
+} /*Display: flex; allows items to be displayed in a row at the center of the navigation bar 
+    list-style-type: none; makes the list items display without bullet points 
+    margin: 0; makes it so that there is no default margin
+    width: 100%; makes the navigation bar span the entire width of the page
+    position: fixed; fixes the navigation bar at the top of the page
+    top and left: 0; positions the navigation bar at the top-left corner of the page
+    z-index: 4; ensures the navigation bar is displayed above other elements */
 #top nav li {
     display: inline-block;
-}
+} /*display: inline-block; allows the list items to be displayed in a row */
 #top nav a {
     color: black;
     text-decoration: none;
+    /*text-decoration: none; removes the default underline from links */
 }
 #top a.a1 {
-    margin: 0px 100px;
+    margin-left: 20px;
 }
 #top img.image1 {
-    max-width: 150px;
-    height: auto;
+    max-width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
 }
 #top a.a2 {
-    margin-top: 20px;
     margin-left: 250px;
     margin-right: 15px;
 }
@@ -70,7 +78,6 @@ html {
     left: -25px;
     top: 85px;
     height: 100%;
-    overflow: auto;
     z-index: 3;
 
 }
@@ -78,7 +85,7 @@ html {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 75px;
+    margin-top: 100%;
     margin-left: 25px;
     padding: 16px 8px;
     display: block;
@@ -109,74 +116,69 @@ p.heading {
 /*==========/
 / Home Page /===================================================================================
 /==========*/
+
+h1.heading1 {
+    display: inline-flex;
+    position: relative;
+    left: 11%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+h1.heading2 {
+    display: inline-flex;
+    position: relative;
+    left: 63%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 div.looks {
     display: inline-flex;
-    box-shadow: 4px 4px 10px;
-}
-p.App {
-    display: inline-grid;
-    text-align: left;
-    font-size: 20px;
-    left: 0px;
-    bottom: 20px;
-    padding-top: 48px;
-    padding-bottom: 40px;
-    padding-right: 4px;
+    position: relative;
+    left: 100px; 
+    display: inline-flex;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 10px;    
     background-color: aliceblue;
 }
+p.style {
+    display: inline-grid;
+    text-align: left;
+    font-size: 22px;
+    bottom: 20px;
+    padding-top: 48px;
+    padding-inline: 15px;
+}
 .picture1 {
-    width: 400px;
-    height: 330px;
+    width: 550px;
+    height: auto;
+}
+.picture2 {
+    background-color: #ed0103;
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
 }
 .apps {
     width: auto;
-    height: 100px;
+    height: 120px;
+    margin-left: 40px;
 }
-/*===========/
-/ Contact Us /===================================================================================
-/===========*/
-.image4 {
+button {
     position: relative;
-    left: 782px;
-}
-.image4 {
-    position: relative;
-    top: -160px;
-    margin-top: -150px;
-    border: 4px solid rgb(0, 0, 0);
-}
-.image4 {
-    width: 677px;
-    height: 477px;
-}
-.p1 {
-    left: 100px;
-    font-size: 18px;
-}
-.p2 {
-    left: 100px;
-    font-size: 18px;
-}
-.paragraphs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.p1, .p2 {
-    border: 2px solid black;
-    background-color: aliceblue;
+    left: 38%;
+    bottom: 163px;
+    background-color: #ffc72c;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
     padding: 20px;
-    display: table;
+    border-radius: 20px;
+    cursor: pointer;
 }
-.bold-text {
-    font-weight: 750;
-    font-family: Arial, sans-serif;
-}
-.link1 {
-    position: relative;
-    right: -783px;
-    top: 300px;
-}
-/*===========/
-/  /===================================================================================
-/===========*/
