@@ -75,6 +75,7 @@
     background-color: #ffc72c;
     position: fixed;
     left: -25px;
+    top: 85px;
     height: 100%;
     overflow: auto;
     z-index: 3;
@@ -98,12 +99,13 @@
     transition: 0.5s;
 }
 p {
+    display: inline-table;
     position: relative;
     color: black;
 }
 p.heading {
     left: 100px;
-    top: 30px;
+    top: 40px;
     font-size: 70px;
     font-weight: bold;
 }
