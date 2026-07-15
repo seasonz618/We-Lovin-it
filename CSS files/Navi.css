@@ -97,3 +97,13 @@
     background-color: #ed0103;
     transition: 0.5s;
 }
+p {
+    position: relative;
+    color: black;
+}
+p.heading {
+    left: 100px;
+    top: 30px;
+    font-size: 70px;
+    font-weight: bold;
+}
