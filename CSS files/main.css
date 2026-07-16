@@ -98,8 +98,11 @@ html {
     background-color: #ed0103;
     transition: 0.5s;
 }
-body.main {
-     background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229))
+body {
+    display: inline-flex;
+    margin-top: 90px;
+    margin-left: 100px;
+    background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229))
 }
 p {
     position: relative;
@@ -107,18 +110,15 @@ p {
     font-family: Arial sans-serif;
 }
 p.heading {
-    display: inline-flex;
-    left: 100px;
-    top: 40px;
     font-size: 70px;
     font-weight: bold;
 }
+
 /*==========/
 / Home Page /===================================================================================
 /==========*/
 
 h1.heading1 {
-    display: inline-flex;
     position: relative;
     left: 11%;
     text-align: center;
@@ -127,7 +127,6 @@ h1.heading1 {
     text-decoration: underline;
 }
 h1.heading2 {
-    display: inline-flex;
     position: relative;
     left: 63%;
     text-align: center;
@@ -137,7 +136,6 @@ h1.heading2 {
 }
 
 div.looks {
-    display: inline-flex;
     position: relative;
     left: 100px; 
     display: inline-flex;
@@ -147,7 +145,6 @@ div.looks {
     background-color: aliceblue;
 }
 p.style {
-    display: inline-grid;
     text-align: left;
     font-size: 22px;
     bottom: 20px;
