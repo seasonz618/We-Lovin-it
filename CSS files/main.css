@@ -29,7 +29,7 @@ html {
     /*text-decoration: none; removes the default underline from links */
 }
 #top a.a1 {
-    margin-left: 20px;
+    margin-left: 20%;
 }
 #top img.image1 {
     max-width: 90px;
@@ -72,11 +72,11 @@ html {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 120px;
+    width: 110px;
     background-color: #ffc72c;
     position: fixed;
     left: -25px;
-    top: 85px;
+    top: 0;
     height: 100%;
     z-index: 3;
 
@@ -85,7 +85,7 @@ html {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 100%;
+    margin: 50% 0;
     margin-left: 25px;
     padding: 16px 8px;
     display: block;
@@ -93,6 +93,7 @@ html {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
+    font-size: clamp(0.5rem 4vw 1rem);
 }
 #side li a:hover {
     background-color: #ed0103;
@@ -108,8 +109,8 @@ p {
 }
 p.heading {
     display: inline-flex;
-    left: 100px;
-    top: 40px;
+    margin-left: 120px;
+    margin-top: 90px;
     font-size: 70px;
     font-weight: bold;
 }
@@ -138,8 +139,8 @@ h1.heading2 {
 
 div.looks {
     display: inline-flex;
-    position: relative;
-    left: 100px; 
+    position: static;
+    margin-left: 90px; 
     display: inline-flex;
     max-width: 100%;
     height: auto;
@@ -171,9 +172,10 @@ p.style {
     margin-left: 40px;
 }
 button {
-    position: relative;
-    left: 38%;
-    bottom: 163px;
+    display: inline-block;
+    position: absolute;
+    margin-left: -50%;
+    margin-top: 25%;
     background-color: #ffc72c;
     color: rgb(0, 0, 0);
     font-size: 20px;
