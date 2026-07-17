@@ -5,6 +5,7 @@ th {
 
 img.bottomimage {
     position: absolute;
+    float: right;
     bottom: 50px;
     right: 100px;
     width: 120px;
