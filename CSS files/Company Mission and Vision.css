@@ -12,3 +12,10 @@ th {
     margin-top: 150px;
     right: 150px;
 }
+.mission {
+    background: white;
+padding: 16px;
+border-radius: 12px;
+box-shadow: 40px 40px
+100px #B9B9B9;
+}
