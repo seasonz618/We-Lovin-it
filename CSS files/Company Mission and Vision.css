@@ -5,16 +5,16 @@ th {
 
 div.bottomimg1 {
  object-fit: cover;
- object-position: bottom;
+ object-position: center;
  float: right;
 }
 div.bottomimg2 {
  object-fit: cover;
- object-position: bottom;
+ object-position: center;
  float: right;
 }
 div.bottomimg3 {
  object-fit: cover;
- object-position: bottom;
+ object-position: center;
  float: right;
 }
