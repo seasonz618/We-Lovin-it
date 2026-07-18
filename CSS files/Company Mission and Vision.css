@@ -2,10 +2,14 @@
 th {
     Font-weight: bold;
 }
+body {
+margin: 0;
+}
 .image1 {
-    position: absolute;
-    margin-bottom: 150px;
-    left: 150px;
+position: absolute;
+top: 0;
+left: 0; 
+width: 100%;
 }
 .image2 {
     position: absolute;
