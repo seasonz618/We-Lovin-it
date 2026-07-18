@@ -5,13 +5,14 @@ html {
 #top nav ul { 
     position: fixed;
     display: flex;
+    align-items: center;
     list-style-type: none;
     background-color: #ed0103;
     margin: 0;
     width: 100%;
-    height: 90px;
-    top: 0;
+    height: 14%;
     left: 0;
+    top: 0;
     z-index: 4;
 } /*Display: flex; allows items to be displayed in a row at the center of the navigation bar 
     list-style-type: none; makes the list items display without bullet points 
@@ -29,42 +30,36 @@ html {
     /*text-decoration: none; removes the default underline from links */
 }
 #top a.a1 {
-    margin-left: 20%;
 }
 #top img.image1 {
-    max-width: 90px;
-    height: 90px;
+    width: 45px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
 #top a.a2 {
-    margin-left: 250px;
-    margin-right: 15px;
+    margin-left: 200%;
+    margin-right: 100%;
 }
 #top img.image2 {
-    margin-top: 20px;
     max-width: 45px;
-    max-height: 45px;
+    max-height: auto;
 }
 #top a.Locate-us {
-    display: flex;
     text-align: center;
     background-color: #ffc72c;
     padding: 10px 38px;
     border-radius: 40px;
-    margin-block: 15px;
-    margin-left: 60px;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
 }
 #top a.Order {
-    display: flex;
+    flex-direction: row;
     text-align: center;
     background-color: #ffc72c;
     padding: 10px 20px;
     border-radius: 40px;
-    margin: 15px 40px;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
 }
 #side nav ul {
@@ -100,24 +95,19 @@ html {
     transition: 0.5s;
 }
 body {
-    display: inline-flex;
-    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
     margin-left: 100px;
-    background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229))
+    margin-top: 10%;
+    background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229));
+    
 }
 p {
-    position: relative;
     color: black;
     font-family: Arial sans-serif;
 }
 p.heading {
-<<<<<<< HEAD
-    display: inline-flex;
-    margin-left: 120px;
-    margin-top: 90px;
-=======
->>>>>>> 4d9c617f41b32a128f5d64d5dab16549a94bf3ad
-    font-size: 70px;
+    font-size: 6vw;
     font-weight: bold;
 }
 
@@ -125,9 +115,9 @@ p.heading {
 / Home Page /===================================================================================
 /==========*/
 
+
+
 h1.heading1 {
-    position: relative;
-    left: 11%;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
@@ -143,30 +133,21 @@ h1.heading2 {
 }
 
 div.looks {
-<<<<<<< HEAD
-    display: inline-flex;
-    position: static;
-    margin-left: 90px; 
-=======
-    position: relative;
-    left: 100px; 
->>>>>>> 4d9c617f41b32a128f5d64d5dab16549a94bf3ad
-    display: inline-flex;
-    max-width: 100%;
+    width: auto;
     height: auto;
+    display: flex;
     box-shadow: 4px 4px 10px;    
     background-color: aliceblue;
 }
 p.style {
+    display: block;
     text-align: left;
-    font-size: 22px;
-    bottom: 20px;
-    padding-top: 48px;
-    padding-inline: 15px;
+    font-size: 1.5vw;
+    padding: 2%;
 }
 .picture1 {
-    width: 550px;
-    height: auto;
+    width: 45%;
+    height: 20%;
 }
 .picture2 {
     background-color: #ed0103;
@@ -176,9 +157,10 @@ p.style {
     object-position: center;
 }
 .apps {
-    width: auto;
-    height: 120px;
-    margin-left: 40px;
+    margin-top: 0;
+    width: 30%;
+    height: auto;
+    margin-left: 0;
 }
 button {
     display: inline-block;
