@@ -3,6 +3,6 @@ th {
     Font-weight: bold;
 }
 
-img.bottomimage {
-    object-position: right;
+img.bottomimage1 {
+    object-position: right bottom;
 }
