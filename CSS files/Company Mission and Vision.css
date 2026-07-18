@@ -3,26 +3,23 @@ th {
     Font-weight: bold;
 }
 div.bottomimg1 {
-    position: relative;
-    bottom: 50px;
-}
-div.bottomimg1 {
-    position: relative;
-    right: 50px;
-}
-div.bottomimg2 {
-    position: relative;
-    bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 300px;
+    float: right;
 }
 div.bottomimg2 {
-    position: relative;
-    right: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 200px;
+    float: right;
 }
 div.bottomimg3 {
-    position: relative;
-    bottom: 50px;
-}
-div.bottomimg3 {
-    position: relative;
-    right: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 250px;
+    float: right;
 }
