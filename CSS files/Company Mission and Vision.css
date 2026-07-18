@@ -3,10 +3,10 @@ th {
     Font-weight: bold;
 }
 div.bottomimg1 {
-    position: relative;
+    position: absolute;
     bottom: 50px;
 }
 div.bottomimg1 {
-    position: relative;
+    position: absolute;
     right: 50px;
 }
