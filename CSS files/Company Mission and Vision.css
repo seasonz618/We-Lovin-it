@@ -2,16 +2,3 @@
 th {
     Font-weight: bold;
 }
-body {
-margin: 0;
-}
-.image1 {
-float: left;
-  width: 50%;
-  padding: 5px;
-}
-.image2: :after {
-    content: "";
-  clear: both;
-  display: table;
-}
