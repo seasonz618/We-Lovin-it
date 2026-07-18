@@ -2,12 +2,12 @@
 th {
     Font-weight: bold;
 }
-div.image1 {
+.image1 {
     position: absolute;
     margin-bottom: 150px;
     left: 150px;
 }
-div.image2 {
+.image2 {
     position: absolute;
     margin-top: 150px;
     right: 150px;
