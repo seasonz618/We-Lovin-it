@@ -12,14 +12,14 @@ width: 100px;
 height: 100px;
 }
 div.bottomimg1 img {
-    bottom: 10;
- right: 10;
+    bottom: 0;
+ right: 0;
 }
 div.bottomimg2 img {
- bottom: 10;
+ bottom: 0;
  right: 10;
 }
 div.bottomimg3 img {
- bottom: 10;
- right: 10;
+ bottom: 0;
+ right: 0;
 }
