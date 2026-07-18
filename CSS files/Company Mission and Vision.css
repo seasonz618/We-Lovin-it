@@ -2,24 +2,3 @@
 th {
     Font-weight: bold;
 }
-div.bottomimg1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 300px;
-    float: right;
-}
-div.bottomimg2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 200px;
-    float: right;
-}
-div.bottomimg3 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 250px;
-    float: right;
-}
