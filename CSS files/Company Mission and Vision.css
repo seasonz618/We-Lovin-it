@@ -12,12 +12,9 @@ width: 50px; /* Adjust size as needed */
 height: 50px;
 }
 div.bottomimg1 img {
-position: relative;
+    bottom: 0;
+ right: 0;
 }
-div.bottomimg1 img span {
-position: absolute;
-bottom: 0;
-right: 0;
 }
 div.bottomimg2 img {
  bottom: 0;
