@@ -8,8 +8,8 @@ padding: 0;
 }
 corner img {
 position: absolute;
-width: 50px; /* Adjust size as needed */
-height: 50px;
+width: 100px;
+height: 100px;
 }
 div.bottomimg1 img {
     bottom: 0;
