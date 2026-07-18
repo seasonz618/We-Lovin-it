@@ -4,5 +4,6 @@ th {
 }
 
 img.bottomimage1 {
+    object-fit: cover;
     object-position: right bottom;
 }
