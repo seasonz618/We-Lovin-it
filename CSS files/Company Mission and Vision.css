@@ -2,18 +2,24 @@
 th {
     Font-weight: bold;
 }
-
+body {
+margin: 0;
+padding: 0;
+}
+corner img {
+position: absolute;
+width: 50px; /* Adjust size as needed */
+height: 50px;
+}
 div.bottomimg1 {
  bottom: 0;
  right: 0;
 }
 div.bottomimg2 {
- object-fit: cover;
- object-position: right;
- float: right;
+ bottom: 0;
+ right: 0;
 }
 div.bottomimg3 {
- object-fit: cover;
- object-position: right;
- float: right;
+ bottom: 0;
+ right: 0;
 }
