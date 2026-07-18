@@ -2,3 +2,13 @@
 th {
     Font-weight: bold;
 }
+div.image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.image2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
