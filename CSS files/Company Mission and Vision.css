@@ -4,5 +4,6 @@ th {
 }
 
 div.bottomimg1 {
- float: left;
+ object-fit: cover;
+ object-position: right bottom;
 }
