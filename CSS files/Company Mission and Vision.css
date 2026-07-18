@@ -4,9 +4,11 @@ th {
 }
 
 div.bottomimg1 {
- object-fit: cover;
- object-position: center;
- float: right;
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 5px 10px;
+  border: 5px solid red;
 }
 div.bottomimg2 {
  object-fit: cover;
