@@ -7,9 +7,8 @@ margin: 0;
 }
 .image1 {
 position: absolute;
-top: 0;
-left: 0; 
-width: 100%;
+    margin-bottom: 150px;
+    left: 150px;
 }
 .image2 {
     position: absolute;
