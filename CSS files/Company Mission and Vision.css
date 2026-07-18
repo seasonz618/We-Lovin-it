@@ -16,6 +16,8 @@ div.bottomimg1 img {
  right: 0;
 }
 div.bottomimg2 img {
+object-fit: cover;
+object-position: 50px 50px;
  bottom: 0;
  right: 0;
 }
