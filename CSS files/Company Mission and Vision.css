@@ -2,3 +2,11 @@
 th {
     Font-weight: bold;
 }
+div.bottomimg1 {
+    position: relative;
+    bottom: 50px;
+}
+div.bottomimg1 {
+    position: relative;
+    right: 50px;
+}
