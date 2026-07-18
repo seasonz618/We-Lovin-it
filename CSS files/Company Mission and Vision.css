@@ -8,3 +8,13 @@ div.bottomimg1 {
  object-position: bottom;
  float: right;
 }
+div.bottomimg2 {
+ object-fit: cover;
+ object-position: bottom;
+ float: right;
+}
+div.bottomimg3 {
+ object-fit: cover;
+ object-position: bottom;
+ float: right;
+}
