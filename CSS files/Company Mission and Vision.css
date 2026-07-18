@@ -6,12 +6,12 @@ body {
 margin: 0;
 }
 .image1 {
-position: absolute;
-    margin-bottom: 150px;
-    left: 150px;
+float: left;
+  width: 33.33%;
+  padding: 5px;
 }
-.image2 {
-    position: absolute;
-    margin-top: 150px;
-    right: 150px;
+.image2: :after {
+    content: "";
+  clear: both;
+  display: table;
 }
