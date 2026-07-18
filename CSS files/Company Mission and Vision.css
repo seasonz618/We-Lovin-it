@@ -11,15 +11,15 @@ position: absolute;
 width: 50px; /* Adjust size as needed */
 height: 50px;
 }
-div.bottomimg1 {
+div.bottomimg1 img {
  bottom: 0;
  right: 0;
 }
-div.bottomimg2 {
+div.bottomimg2 img {
  bottom: 0;
  right: 0;
 }
-div.bottomimg3 {
+div.bottomimg3 img {
  bottom: 0;
  right: 0;
 }
