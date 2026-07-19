@@ -1,69 +1,65 @@
 /* unfortunately done mostly by KUNG TIAN SHUN RAYDON 261348L*/
-#top nav ul { 
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    background-color: #ed0103;
-    width: 100%;
-    height: 90px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 4;
+html {
+    font-family: Arial, sans-serif;
 }
+#top nav ul { 
+    position: fixed;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: #ed0103;
+    margin: 0;
+    width: 100%;
+    height: 14%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+} /*Display: flex; allows items to be displayed in a row at the center of the navigation bar 
+    list-style-type: none; makes the list items display without bullet points 
+    margin: 0; makes it so that there is no default margin
+    width: 100%; makes the navigation bar span the entire width of the page
+    position: fixed; fixes the navigation bar at the top of the page
+    top and left: 0; positions the navigation bar at the top-left corner of the page
+    z-index: 4; ensures the navigation bar is displayed above other elements */
 #top nav li {
     display: inline-block;
-}
+} /*display: inline-block; allows the list items to be displayed in a row */
 #top nav a {
     color: black;
     text-decoration: none;
+    /*text-decoration: none; removes the default underline from links */
 }
 #top a.a1 {
-    margin: 0px 100px;
 }
 #top img.image1 {
-    max-width: 150px;
-    height: auto;
+    width: 45px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 #top a.a2 {
-    margin-top: 20px;
-    margin-left: 250px;
-    margin-right: 15px;
+    margin-left: 200%;
+    margin-right: 100%;
 }
 #top img.image2 {
-    margin-top: 20px;
     max-width: 45px;
-    max-height: 45px;
-}
-#top img.image3 {
-    background-color: #f01317;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    padding-inline: 5px;
-    border: 3px solid #000000;
-    margin-top: 20px;
-    width: 20px;
-    height: 20px;
+    max-height: auto;
 }
 #top a.Locate-us {
-    display: flex;
     text-align: center;
     background-color: #ffc72c;
     padding: 10px 38px;
     border-radius: 40px;
-    margin-block: 15px;
-    margin-left: 60px;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
 }
 #top a.Order {
-    display: flex;
+    flex-direction: row;
     text-align: center;
     background-color: #ffc72c;
     padding: 10px 20px;
     border-radius: 40px;
-    margin: 15px 40px;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
 }
 #side nav ul {
@@ -71,13 +67,12 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 100px;
+    width: 110px;
     background-color: #ffc72c;
     position: fixed;
     left: -25px;
-    top: 85px;
+    top: 0;
     height: 100%;
-    overflow: auto;
     z-index: 3;
 
 }
@@ -85,7 +80,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 75px;
+    margin: 50% 0;
     margin-left: 25px;
     padding: 16px 8px;
     display: block;
@@ -93,27 +88,90 @@
     color: #000000;
     text-decoration: none;
     font-weight: bold;
+    font-size: clamp(0.5rem 4vw 1rem);
 }
 #side li a:hover {
     background-color: #ed0103;
     transition: 0.5s;
 }
-/*=============/
-/ MAIN HEADING / 
-/=============*/
+body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 10%;
+    background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229));
+    
+}
 p {
-    display: inline-table;
-    position: relative;
     color: black;
-    font-family: Arial sans-serif  ;
+    font-family: Arial sans-serif;
 }
 p.heading {
-    left: 100px;
-    top: 40px;
-    font-size: 70px;
+    font-size: 6vw;
     font-weight: bold;
 }
-body.main {
-     background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229))
+
+/*==========/
+/ Home Page /===================================================================================
+/==========*/
+
+
+
+h1.heading1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+h1.heading2 {
+    position: relative;
+    left: 63%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
+div.looks {
+    width: auto;
+    height: auto;
+    display: flex;
+    box-shadow: 4px 4px 10px;    
+    background-color: aliceblue;
+}
+p.style {
+    display: block;
+    text-align: left;
+    font-size: 1.5vw;
+    padding: 2%;
+}
+.picture1 {
+    width: 45%;
+    height: 20%;
+}
+.picture2 {
+    background-color: #ed0103;
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+.apps {
+    margin-top: 0;
+    width: 30%;
+    height: auto;
+    margin-left: 0;
+}
+button {
+    display: inline-block;
+    position: absolute;
+    margin-left: -50%;
+    margin-top: 25%;
+    background-color: #ffc72c;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
