@@ -29,6 +29,7 @@
     align-items: flex-start;
 }
 .p1, .p2 {
+    text-align: center;
     border: 2px solid black;
     background-color: aliceblue;
     padding: 20px;
