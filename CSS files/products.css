@@ -1,0 +1,130 @@
+/* Author KANG CHENGXI, 261185R */
+
+@font-face {
+	font-family: "McDonalds_Helvetica";
+	src: url('../fonts/McDonalds_Helvetica.ttf') format('truetype');
+}
+
+body { /* Custom body font */
+	font-family: "McDonalds_Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	color: #222;
+	background: #fff;
+	line-height: 1.4;
+}
+
+/* Body classes */
+
+.main {
+	max-width: 980px;
+	margin: 36px auto;
+	padding: 0 18px;
+}
+
+.header {
+	text-align: left;
+	margin-bottom: 18px;
+}
+
+.overflow {
+	overflow-x: auto;
+}
+
+.table {
+	width: 100%;
+	border-collapse: separate; /* Seperate borders */
+	border-spacing: 0 8px; /* 0px horizontal, 8px vertical */
+	background: #fff;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+.table th,
+.table td {
+	padding: 12px 14px;
+	border-bottom: 1px solid #fff;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.table thead th {
+	background: #fff;
+	font-weight: 600;
+	color: #222;
+}
+
+.table tbody tr { 
+	transition: background-color 0.3s ease-in-out; /* hover transition effect for style points */
+}
+
+/* Rounds corners of the first and last cells in each row */
+.table tbody tr td:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+.table tbody tr td:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+.table tbody tr:hover {
+	background: #ffbc0d; /* McDonald's signature yellow */
+}
+
+.image {
+	text-align: center;
+}
+
+.image img {
+	border-radius: 4px;
+}
+
+.price {
+	font-weight: 700;
+	color: #222;
+}
+
+/* On displays narrower than 520px, shrink column width and decrease padding, font, and image size, 
+as well as reducing row spacing and hiding desc. column. */
+
+@media (max-width: 520px) { 
+	.main {
+		padding: 0 12px;
+	}
+
+	.table {
+		border-spacing: 0 4px;
+	}
+
+	.table th,
+	.table td {
+		padding: 8px 10px;
+		font-size: 0.9em;
+	}
+
+	.table th:nth-child(3),
+	.table td:nth-child(3) { display: none; }
+	
+	.table th:nth-child(1) { width: 30%; }
+
+	.table tbody tr td:first-child img {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+
+/* Extra accessibility for anybody still on a nokia */
+
+@media (max-width: 320px) {
+	.main {
+		padding: 0 8px;
+	}
+
+	.table th,
+	.table td {
+		padding: 6px 8px;
+		font-size: 0.8em;
+	}
+
+	.header h1 {
+		font-size: 1.4em;
+	}
+}
