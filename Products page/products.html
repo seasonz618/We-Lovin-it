@@ -17,6 +17,13 @@
 			<h1>-Full Menu-</h1>
 		</header>
 
+		<section class="bar"> <!-- Search form section -->
+			<form class="form" action="#" method="get" role="search">
+				<input id="input" class="input" type="search" name="q" placeholder="placeholder" aria-label="Search menu">
+				<button type="submit" class="searchbutton">Search</button>
+			</form>
+		</section>
+
 		<section class="overflow"> <!--allow for overflow scrolling just in case stuff gets too fat-->
 			<table class="table">
 					<thead>
@@ -140,5 +147,24 @@
 				</table>
 		</section>
 	</main>
+
+	<script>
+	/* hides rows that don't match search */
+	document.addEventListener('DOMContentLoaded', function () {
+		var form = document.querySelector('.form');
+		if (!form) return;
+		form.addEventListener('submit', function (e) {
+			e.preventDefault();
+			var q = document.getElementById('input').value.toLowerCase().trim();
+			var rows = document.querySelectorAll('.table tbody tr');
+			rows.forEach(function (row) {
+				var item = (row.cells[1] && row.cells[1].textContent || '').toLowerCase();
+				if (q === '' || item.indexOf(q) !== -1) row.style.display = '';
+				else row.style.display = 'none';
+			});
+		});
+	});
+	</script>
+
 </body>
 </html>
