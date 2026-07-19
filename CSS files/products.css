@@ -51,10 +51,6 @@ body { /* Custom body font */
 	color: #222;
 }
 
-.table tbody tr { 
-	transition: background-color 0.3s ease-in-out; /* hover transition effect for style points */
-}
-
 /* Rounds corners of the first and last cells in each row */
 .table tbody tr td:first-child {
 	border-radius: 8px 0 0 8px;
@@ -65,7 +61,11 @@ body { /* Custom body font */
 }
 
 .table tbody tr:hover {
-	background: #ffbc0d; /* McDonald's signature yellow */
+	background-color: #ffbc0d; /* McDonald's yellow */
+}
+
+.table tbody tr { 
+	transition: background-color 0.3s ease-in-out; /* hover transition effect for style points */
 }
 
 .image {
@@ -79,6 +79,38 @@ body { /* Custom body font */
 .price {
 	font-weight: 700;
 	color: #222;
+}
+
+/* Search bar */
+.bar {
+	margin: 12px 0 18px;
+}
+
+.form {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.input {
+	flex: 1;
+	padding: 10px 12px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	font-size: 1rem;
+}
+
+.searchbutton {
+	padding: 10px 14px;
+	background: #ffbc0d;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.search-button:hover {
+	opacity: 0.95;
 }
 
 /* On displays narrower than 520px, shrink column width and decrease padding, font, and image size, 
