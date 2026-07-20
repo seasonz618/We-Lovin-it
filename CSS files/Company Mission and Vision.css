@@ -1,9 +1,10 @@
 /* Author: Zac Lou, Admin No.:261097H */
-h1 {
-    Font-weight: bold;
-    margin: auto;
+.info {
+    font-weight: bold;
+    margin:auto
 }
 .image {
     margin: auto;
     
 }
+
