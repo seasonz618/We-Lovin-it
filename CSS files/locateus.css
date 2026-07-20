@@ -43,37 +43,10 @@ body { font-family: Arial, sans-serif; background-color: #ffffff;
     right: -783px;
     top: 300px;
 }
-.hours-box{
-    border:1px solid black;
-    padding:15px;
-    width:700px;
-    background:#eef6ff;
-}
-
-.hours-box table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-.hours-box td{
-    padding:8px 0;
-    vertical-align:top;
-}
-
-.hours-box td:first-child{
-    width:220px;
-    font-weight:bold;
-}
 
 .note{
     margin-top:15px;
     font-style:italic;
-}
-
-.hours-box {
-    border: 2px solid black;
-    margin-left: 100px;
-    width: 558px
 }
 
 .location-box {
@@ -110,7 +83,7 @@ body { font-family: Arial, sans-serif; background-color: #ffffff;
     margin-top: 15px;
 }
 
-.direction-btn {
+.direction-button {
     display: inline-block;
     background-color: #ffc72c;
     color: black;
@@ -121,6 +94,6 @@ body { font-family: Arial, sans-serif; background-color: #ffffff;
     margin-top: 10px;
 }
 
-.direction-btn:hover {
+.direction-button:hover {
     background-color: #d53030
 }
