@@ -6,23 +6,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="../css files/products.css">
+	<link rel="stylesheet" href="../CSS files/main.css">
 </head>
+
+<element id="top"><nav><ul>
+
+    <li><a href="index.html">
+    Home
+    </a></li>
+    <li><a href="https://www.instagram.com/mcdsg/">
+    Instagram
+    </a></li>
+    <li><a href="Contact us pages/locateus.html">Locate
+    </a></li>
+    <li><a href= "#Order">Order
+    </a></li>
+</ul></nav></element>
+<element id="side"><nav><ul>
+
+<li><a href="Products page/products.html" style="margin-top: 150%;">Menu</a></li>
+<li><a href="#Forms">Forms</a></li>
+<li><a href="Contact us pages/contactus.html">Contacts</a></li>
+<li><a href="FAQ Page.html">FAQ</a></li>
+
+</ul></nav></element>
 
 <body>
 	<main class="main">
-
-		<header class="header">
-			<h1>-Full Menu-</h1>
-		</header>
-
-		<section class="bar"> <!-- Search form section -->
-			<form class="form" action="#" method="get" role="search">
-				<input id="input" class="input" type="search" name="q" placeholder="placeholder" aria-label="Search menu">
-				<button type="submit" class="searchbutton">Search</button>
-			</form>
-		</section>
+	<h1 class="h1">-Full Menu-</h1>
 
 		<section class="overflow"> <!--allow for overflow scrolling just in case stuff gets too fat-->
 			<table class="table">
@@ -38,7 +51,7 @@
 						<tr> <!--ctrl c  ctrl v-->
 							<td class="image"><img src="../images/burger.jpg" alt="triple borgar" width="80" height="80"></td>
 							<td>Triple Cheeseburger</td>
-							<td>desc.</td>
+							<td>Burger with cheese and triple beef patties</td>
 							<td class="price">$4.99</td>
 						</tr>
 						<tr>
@@ -147,24 +160,6 @@
 				</table>
 		</section>
 	</main>
-
-	<script>
-	/* hides rows that don't match search */
-	document.addEventListener('DOMContentLoaded', function () {
-		var form = document.querySelector('.form');
-		if (!form) return;
-		form.addEventListener('submit', function (e) {
-			e.preventDefault();
-			var q = document.getElementById('input').value.toLowerCase().trim();
-			var rows = document.querySelectorAll('.table tbody tr');
-			rows.forEach(function (row) {
-				var item = (row.cells[1] && row.cells[1].textContent || '').toLowerCase();
-				if (q === '' || item.indexOf(q) !== -1) row.style.display = '';
-				else row.style.display = 'none';
-			});
-		});
-	});
-	</script>
 
 </body>
 </html>

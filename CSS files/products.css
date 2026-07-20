@@ -20,8 +20,12 @@ body { /* Custom body font */
 	padding: 0 18px;
 }
 
-.header {
-	text-align: left;
+.h1 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
 	margin-bottom: 18px;
 }
 
@@ -79,38 +83,6 @@ body { /* Custom body font */
 .price {
 	font-weight: 700;
 	color: #222;
-}
-
-/* Search bar */
-.bar {
-	margin: 12px 0 18px;
-}
-
-.form {
-	display: flex;
-	gap: 8px;
-	align-items: center;
-}
-
-.input {
-	flex: 1;
-	padding: 10px 12px;
-	border: 1px solid #e0e0e0;
-	border-radius: 8px;
-	font-size: 1rem;
-}
-
-.searchbutton {
-	padding: 10px 14px;
-	background: #ffbc0d;
-	border: none;
-	border-radius: 8px;
-	cursor: pointer;
-	font-weight: 700;
-}
-
-.search-button:hover {
-	opacity: 0.95;
 }
 
 /* On displays narrower than 520px, shrink column width and decrease padding, font, and image size, 

@@ -1,4 +1,11 @@
 /* Author: Zac Lou, Admin No.:261097H */
-th {
-    Font-weight: bold;
+.info {
+    font-weight: bold;
+    font-size: 50px
+    margin:auto
 }
+.image {
+    margin: auto;
+    
+}
+
