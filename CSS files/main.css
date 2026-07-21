@@ -21,7 +21,7 @@ html {
     justify-content: center;        /*makes all items to be diaplayed in a row at the center of the navigation bar horizonatlly*/
 }
 #top li a {
-    transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
+    
     display: flex;
     text-align: center;                         /*align the text in the center of the padding*/
     margin: 0 10px;
@@ -31,6 +31,7 @@ html {
     color: #000000;
     text-decoration: none;                      /*removes the underline link*/
     font-weight: bold;
+    transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
     font-size: clamp(1.1rem, 2.5vw, 4rem);      /*changes the text size base on the screen use to view, 1.1rem being the smallest words can go and 4rem being the largest*/
 }                                               /*2.5vw makes the word equal to 2.5% of the screen width*/
 #top li a:hover {                               /*when the mouse hovers over the word, the below happens*/
@@ -64,7 +65,7 @@ html {
     text-decoration: none;
     font-weight: bold;
     font-size: clamp(1rem, 1vw, 2rem);
-    transition: background-color 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 #side li a:hover {
@@ -90,11 +91,12 @@ p.heading {
 }
 
 /*==========/
-/ Home Page /===================================================================================
+/ Home Page /========================================================================================================================================
 /==========*/
 
-
-
+.home{
+    overflow-x: hidden;
+}
 h1.title {
     text-align: center;
     font-size: 4vw;
@@ -110,21 +112,15 @@ div.looks {
     background-color: aliceblue;
 }
 p.style {
-    display: block;
+    font-family: Arial, sans-serif;
+    display: inline-block;
     text-align: left;
-    font-size: clamp(0.5rem, 1.5vw, 2rem);
+    font-size: clamp(0.5rem, 1.5vw, 3rem);
     padding: 0 5px;
 }
 .picture1 {
     width: 50%;
     height: auto;
-}
-.picture2 {
-    background-color: #ed0103;
-    width: 40%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
 }
 .apps {
     margin-top: 0;
@@ -133,20 +129,50 @@ p.style {
     height: auto;
     margin-left: 0;
 }
+.picture2 {
+    background-color: #ed0103;
+    min-width: 100px;
+    width: 150%;
+    max-width: 700px;
+    height: auto;
+}
+.picture3 {
+    min-width: 100px;
+    width: 150%;
+    max-width: 700px;
+    height: auto;
+}
+.picture4 {
+    min-width: 80px;
+    width: 150%;
+    max-width: 700px;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ffc72c;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
 footer {
-    display: block;
-    margin-top: 20%;
-    height: 100%;
-    width: 100%;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: -50px;
     background-color: #ed0103;
     font-weight: bold;
+    font-size: 1.8vw;
+    width: 100vw;
 }
-button {
-    background-color: #ffc72c;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
-    border-radius: 20px;
-    cursor: pointer;
+footer ul {
+    list-style-type: none;
 }
+footer ul a {
+    color: #000000; 
+}
+
