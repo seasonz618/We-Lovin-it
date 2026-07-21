@@ -4,3 +4,8 @@ summary {
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+summary::after {
+  content: "▶"; 
+  float: right;
+  transition: transform 0.2s ease;
+}
