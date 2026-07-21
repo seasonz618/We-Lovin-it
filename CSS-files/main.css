@@ -2,7 +2,7 @@
 html {
     font-family: Arial, sans-serif;
 }
-#top nav ul { 
+nav.top ul { 
     font-family: Arial, sans-serif;
     position: fixed;                /*fixes the navigation bar at the top of the page*/
     display: flex;                  /*allows items to be displayed in a row at the center of the navigation bar vertically*/
@@ -20,7 +20,7 @@ html {
     z-index: 4;                     /*ensures the navigation bar is displayed above other elements*/
     justify-content: center;        /*makes all items to be diaplayed in a row at the center of the navigation bar horizonatlly*/
 }
-#top li a {
+nav.top li a {
     
     display: flex;
     text-align: center;                         /*align the text in the center of the padding*/
@@ -34,11 +34,11 @@ html {
     transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
     font-size: clamp(1.1rem, 2.5vw, 4rem);      /*changes the text size base on the screen use to view, 1.1rem being the smallest words can go and 4rem being the largest*/
 }                                               /*2.5vw makes the word equal to 2.5% of the screen width*/
-#top li a:hover {                               /*when the mouse hovers over the word, the below happens*/
+nav.top li a:hover {                               /*when the mouse hovers over the word, the below happens*/
     background-color: #edb313;                   
 }
 
-#side nav ul {
+nav.side ul {
     font-family: Arial, sans-serif;
     list-style-type: none;
     padding: 0;
@@ -53,7 +53,7 @@ html {
     height: 100%;
     z-index: 3;                                 /*ensures the navigation bar is displayed above other elements but not the first one*/
 }
-#side li a {
+nav.side li a {
     display: flex;
     flex-direction: column;                     /*instead on going in a row, all tags will be followed by a column*/
     justify-content:space-between; 
@@ -68,7 +68,7 @@ html {
     transition: 0.2s ease-in-out;
 }
 
-#side li a:hover {
+nav.side li a:hover {
     background-color: #ed0103;
 }
 
