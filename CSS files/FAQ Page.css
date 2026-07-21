@@ -92,46 +92,6 @@ p.heading {
 / Home Page /===================================================================================
 /==========*/
 
-
-
-h1.title {
-    text-align: center;
-    font-size: 4vw;
-    font-weight: bold;
-    text-decoration: underline;         /*gives the word an underline*/
-}
-div.looks {
-    margin: auto;
-    width: auto;
-    height: 100%;
-    display: flex;
-    box-shadow: 4px 4px 10px;            /*gives the border a shadow*/
-    background-color: aliceblue;
-}
-p.style {
-    display: block;
-    text-align: left;
-    font-size: clamp(0.5rem, 1.5vw, 2rem);
-    padding: 0 5px;
-}
-.picture1 {
-    width: 50%;
-    height: auto;
-}
-.picture2 {
-    background-color: #ed0103;
-    width: 40%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-}
-.apps {
-    margin-top: 0;
-    width: 30%;
-    max-width: 200px;
-    height: auto;
-    margin-left: 0;
-}
 footer {
     display: block;
     margin-top: 20%;
