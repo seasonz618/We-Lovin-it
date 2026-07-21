@@ -20,8 +20,12 @@ body { /* Custom body font */
 	padding: 0 18px;
 }
 
-.header {
-	text-align: left;
+.h1 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
 	margin-bottom: 18px;
 }
 
@@ -51,10 +55,6 @@ body { /* Custom body font */
 	color: #222;
 }
 
-.table tbody tr { 
-	transition: background-color 0.3s ease-in-out; /* hover transition effect for style points */
-}
-
 /* Rounds corners of the first and last cells in each row */
 .table tbody tr td:first-child {
 	border-radius: 8px 0 0 8px;
@@ -65,7 +65,11 @@ body { /* Custom body font */
 }
 
 .table tbody tr:hover {
-	background: #ffbc0d; /* McDonald's signature yellow */
+	background-color: #ffbc0d; /* McDonald's yellow */
+}
+
+.table tbody tr { 
+	transition: background-color 0.3s ease-in-out; /* hover transition effect for style points */
 }
 
 .image {

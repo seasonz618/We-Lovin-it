@@ -1,112 +1,89 @@
-/* unfortunately done mostly by KUNG TIAN SHUN RAYDON 261348L*/
+/* unfortunately done only by KUNG TIAN SHUN RAYDON 261348L*/
 html {
     font-family: Arial, sans-serif;
 }
 #top nav ul { 
-    position: fixed;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
+    position: fixed;                /*fixes the navigation bar at the top of the page*/
+    display: flex;                  /*allows items to be displayed in a row at the center of the navigation bar vertically*/
+    align-items: center;            /*align item center makes all items align in the center of the nav bar*/
+    list-style-type: none;          /*list-style-type: none; makes the list items display without bullet points*/
     background-color: #ed0103;
-    margin: 0;
-    width: 100%;
-    height: 14%;
-    left: 0;
+    margin: 0;                      /*makes it so that there is no default margin/padding*/
+    padding: 0;
+    width: 100%;                    /*makes the navigation bar span the entire width of the page*/
+    height: 10%;
+    min-height: 50px;               /*ensures that the % does not go over */
+    max-height: 220px;
+    left: 0;                        /*positions the navigation bar at the top-left corner of the page*/
     top: 0;
-    z-index: 4;
-} /*Display: flex; allows items to be displayed in a row at the center of the navigation bar 
-    list-style-type: none; makes the list items display without bullet points 
-    margin: 0; makes it so that there is no default margin
-    width: 100%; makes the navigation bar span the entire width of the page
-    position: fixed; fixes the navigation bar at the top of the page
-    top and left: 0; positions the navigation bar at the top-left corner of the page
-    z-index: 4; ensures the navigation bar is displayed above other elements */
-#top nav li {
-    display: inline-block;
-} /*display: inline-block; allows the list items to be displayed in a row */
-#top nav a {
-    color: black;
-    text-decoration: none;
-    /*text-decoration: none; removes the default underline from links */
+    z-index: 4;                     /*ensures the navigation bar is displayed above other elements*/
+    justify-content: center;        /*makes all items to be diaplayed in a row at the center of the navigation bar horizonatlly*/
 }
-#top a.a1 {
-}
-#top img.image1 {
-    width: 45px;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-#top a.a2 {
-    margin-left: 200%;
-    margin-right: 100%;
-}
-#top img.image2 {
-    max-width: 45px;
-    max-height: auto;
-}
-#top a.Locate-us {
-    text-align: center;
+#top li a {
+    transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
+    display: flex;
+    text-align: center;                         /*align the text in the center of the padding*/
+    margin: 0 10px;
+    padding: 5px 20px;
+    border-radius: 20px;                        /*curves the edges of the boxes border*/
     background-color: #ffc72c;
-    padding: 10px 38px;
-    border-radius: 40px;
-    font-size: 2vw;
+    color: #000000;
+    text-decoration: none;                      /*removes the underline link*/
     font-weight: bold;
+    font-size: clamp(1.1rem, 2.5vw, 4rem);      /*changes the text size base on the screen use to view, 1.1rem being the smallest words can go and 4rem being the largest*/
+}                                               /*2.5vw makes the word equal to 2.5% of the screen width*/
+#top li a:hover {                               /*when the mouse hovers over the word, the below happens*/
+    background-color: #edb313;                   
 }
-#top a.Order {
-    flex-direction: row;
-    text-align: center;
-    background-color: #ffc72c;
-    padding: 10px 20px;
-    border-radius: 40px;
-    font-size: 2vw;
-    font-weight: bold;
-}
+
 #side nav ul {
-    display: block;
+    font-family: Arial, sans-serif;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 110px;
+    width: 5%;
+    min-width: 80px;                            /*the smallest the width of the navigation bar can go is 80px*/
     background-color: #ffc72c;
     position: fixed;
-    left: -25px;
+    align-items: center;
     top: 0;
+    left: 0;
     height: 100%;
-    z-index: 3;
-
+    z-index: 3;                                 /*ensures the navigation bar is displayed above other elements but not the first one*/
 }
 #side li a {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;                     /*instead on going in a row, all tags will be followed by a column*/
+    justify-content:space-between; 
     text-align: center;
-    margin: 50% 0;
-    margin-left: 25px;
-    padding: 16px 8px;
-    display: block;
+    margin: 100% 0;
+    padding: 20% 10%;
     background-color: #ecb827;
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: clamp(0.5rem 4vw 1rem);
+    font-size: clamp(1rem, 1vw, 2rem);
+    transition: background-color 0.2s ease-in-out;
 }
+
 #side li a:hover {
     background-color: #ed0103;
-    transition: 0.5s;
 }
+
 body {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    margin-top: 10%;
-    background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229));
+    margin-top: 8%;
+    background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229));   /*the gradient will be from the center to the edges*/
     
 }
 p {
     color: black;
-    font-family: Arial sans-serif;
+    font-family: Arial sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
 }
 p.heading {
+    margin: auto;                   /* makes the browser automatically centers the element*/
     font-size: 6vw;
     font-weight: bold;
 }
@@ -117,56 +94,53 @@ p.heading {
 
 
 
-h1.heading1 {
+h1.title {
     text-align: center;
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: underline;         /*gives the word an underline*/
 }
-h1.heading2 {
-    position: relative;
-    left: 63%;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 div.looks {
+    margin: auto;
     width: auto;
-    height: auto;
+    height: 100%;
     display: flex;
-    box-shadow: 4px 4px 10px;    
+    box-shadow: 4px 4px 10px;            /*gives the border a shadow*/
     background-color: aliceblue;
 }
 p.style {
     display: block;
     text-align: left;
-    font-size: 1.5vw;
-    padding: 2%;
+    font-size: clamp(0.5rem, 1.5vw, 2rem);
+    padding: 0 5px;
 }
 .picture1 {
-    width: 45%;
-    height: 20%;
+    width: 50%;
+    height: auto;
 }
 .picture2 {
     background-color: #ed0103;
-    width: 550px;
-    height: 400px;
+    width: 40%;
+    height: auto;
     object-fit: cover;
     object-position: center;
 }
 .apps {
     margin-top: 0;
     width: 30%;
+    max-width: 200px;
     height: auto;
     margin-left: 0;
 }
+footer {
+    display: block;
+    margin-top: 20%;
+    height: 100%;
+    width: 100%;
+    background-color: #ed0103;
+    font-weight: bold;
+}
 button {
-    display: inline-block;
-    position: absolute;
-    margin-left: -50%;
-    margin-top: 25%;
     background-color: #ffc72c;
     color: rgb(0, 0, 0);
     font-size: 20px;
