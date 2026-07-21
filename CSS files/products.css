@@ -20,7 +20,7 @@ body { /* Custom body font */
 	padding: 0 18px;
 }
 
-.h1 {
+.header {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
