@@ -90,3 +90,20 @@ p.heading {
     font-size: 6vw;
     font-weight: bold;
 }
+footer {
+    display: block;
+    margin-top: 20%;
+    height: 100%;
+    width: 100%;
+    background-color: #ed0103;
+    font-weight: bold;
+}
+button {
+    background-color: #ffc72c;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
