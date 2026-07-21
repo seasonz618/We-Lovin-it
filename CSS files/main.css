@@ -3,6 +3,7 @@ html {
     font-family: Arial, sans-serif;
 }
 #top nav ul { 
+    font-family: Arial, sans-serif;
     position: fixed;                /*fixes the navigation bar at the top of the page*/
     display: flex;                  /*allows items to be displayed in a row at the center of the navigation bar vertically*/
     align-items: center;            /*align item center makes all items align in the center of the nav bar*/
