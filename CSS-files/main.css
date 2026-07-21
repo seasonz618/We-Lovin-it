@@ -1,7 +1,4 @@
 /* unfortunately done only by KUNG TIAN SHUN RAYDON 261348L*/
-html {
-    font-family: Arial, sans-serif;
-}
 nav.top ul { 
     font-family: Arial, sans-serif;
     position: fixed;                /*fixes the navigation bar at the top of the page*/
@@ -82,7 +79,7 @@ body {
 }
 p {
     color: black;
-    font-family: Arial sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
+    font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
 }
 p.heading {
     margin: auto;                   /* makes the browser automatically centers the element*/
