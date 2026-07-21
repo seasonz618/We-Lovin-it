@@ -4,8 +4,17 @@ summary {
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+details>summary {
+ 
+  list-style: none;
+}
+summary::marker {
+    content: none;
+}
+
 summary::after {
-  content: "▶"; 
-  float: right;
-  transition: transform 0.2s ease;
+  content: ' ►';
+}
+details[open] summary:after {
+  content: " ▼";
 }
