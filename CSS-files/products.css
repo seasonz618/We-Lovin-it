@@ -89,46 +89,50 @@ body { /* Custom body font */
 as well as reducing row spacing and hiding desc. column. */
 
 @media (max-width: 520px) { 
-	.main {
-		padding: 0 12px;
-	}
 
-	.table {
-		border-spacing: 0 4px;
-	}
+.main {
+	padding: 0 12px;
+}
 
-	.table th,
-	.table td {
-		padding: 8px 10px;
-		font-size: 0.9em;
-	}
+.table {
+	border-spacing: 0 4px;
+}
 
-	.table th:nth-child(3),
-	.table td:nth-child(3) { display: none; }
+.table th,
+.table td {
+	padding: 8px 10px;
+	font-size: 0.9em;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) { display: none; }
 	
-	.table th:nth-child(1) { width: 30%; }
+.table th:nth-child(1) { width: 30%; }
 
-	.table tbody tr td:first-child img {
-		width: 60px;
-		height: 60px;
-	}
+.table tbody tr td:first-child img {
+	width: 60px;
+	height: 60px;
+}
+
 }
 
 
 /* Extra accessibility for anybody still on a nokia */
 
 @media (max-width: 320px) {
-	.main {
-		padding: 0 8px;
-	}
+	
+.main {
+	padding: 0 8px;
+}
 
-	.table th,
-	.table td {
-		padding: 6px 8px;
-		font-size: 0.8em;
-	}
+.table th,
+.table td {
+	padding: 6px 8px;
+	font-size: 0.8em;
+}
 
-	.header h1 {
-		font-size: 1.4em;
-	}
+.header h1 {
+	font-size: 1.4em;
+}
+
 }
