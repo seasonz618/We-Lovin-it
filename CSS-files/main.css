@@ -21,8 +21,8 @@ nav.top li a {
     
     display: flex;
     text-align: center;                         /*align the text in the center of the padding*/
-    margin: 0 10px;
     padding: 5px 20px;
+    margin: 0 10px;
     border-radius: 20px;                        /*curves the edges of the boxes border*/
     background-color: #ffc72c;
     color: #000000;
