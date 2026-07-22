@@ -5,22 +5,21 @@
 	src: url('../fonts/McDonalds_Helvetica.ttf') format('truetype');
 }
 
-body { /* Custom body font */
-	font-family: "McDonalds_Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+body {
+	font-family: "McDonalds_Helvetica";
 	color: #222;
 	background: #fff;
 	line-height: 1.4;
 }
 
-/* Body classes */
-
-.main {
+main {
 	max-width: 980px;
 	margin: 36px auto;
 	padding: 0 18px;
+	overflow-x: auto;
 }
 
-.header {
+h1 {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -29,14 +28,10 @@ body { /* Custom body font */
 	margin-bottom: 18px;
 }
 
-.overflow {
-	overflow-x: auto;
-}
-
 .table {
 	width: 100%;
-	border-collapse: separate; /* Seperate borders */
-	border-spacing: 0 8px; /* 0px horizontal, 8px vertical */
+	border-collapse: separate;
+	border-spacing: 0 8px;
 	background: #fff;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.04);
 }
@@ -55,7 +50,6 @@ body { /* Custom body font */
 	color: #222;
 }
 
-/* Rounds corners of the first and last cells in each row */
 .table tbody tr td:first-child {
 	border-radius: 8px 0 0 8px;
 }
@@ -64,12 +58,12 @@ body { /* Custom body font */
 	border-radius: 0 8px 8px 0;
 }
 
-.table tbody tr:hover {
-	background-color: #ffbc0d; /* McDonald's yellow */
+.table tbody tr { 
+	transition: background-color 0.3s ease-in-out;
 }
 
-.table tbody tr { 
-	transition: background-color 0.3s ease-in-out; /* hover transition effect for style points */
+.table tbody tr:hover {
+	background-color: #ffbc0d; /* McDonald's yellow */
 }
 
 .image {
@@ -85,10 +79,10 @@ body { /* Custom body font */
 	color: #222;
 }
 
-/* On displays narrower than 520px, shrink column width and decrease padding, font, and image size, 
+/* On displays narrower than 50px, shrink column width and decrease padding, font, and image size, 
 as well as reducing row spacing and hiding desc. column. */
 
-@media (max-width: 520px) { 
+@media (max-width: 500px) { 
 
 .main {
 	padding: 0 12px;
@@ -112,27 +106,6 @@ as well as reducing row spacing and hiding desc. column. */
 .table tbody tr td:first-child img {
 	width: 60px;
 	height: 60px;
-}
-
-}
-
-
-/* Extra accessibility for anybody still on a nokia */
-
-@media (max-width: 320px) {
-	
-.main {
-	padding: 0 8px;
-}
-
-.table th,
-.table td {
-	padding: 6px 8px;
-	font-size: 0.8em;
-}
-
-.header h1 {
-	font-size: 1.4em;
 }
 
 }
