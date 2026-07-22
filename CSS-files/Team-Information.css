@@ -2,11 +2,16 @@
 th {
     Font-weight: bold;
     font-family: Arial, sans-serif;
+     background-color: rgb(189, 63, 9);
+            color: rgb(251, 255, 0);
 }
 td {
     font-family: Arial, sans-serif;
+     background-color: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
 }
 h1 {
     font-weight: bold;
     font-family: Arial, sans-serif;
+    color:rgb(189, 63, 9);
 }
