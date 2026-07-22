@@ -74,7 +74,7 @@ body {
     flex-direction: column;
     margin-left: 100px;
     margin-top: 8%;
-    background: radial-gradient(rgb(245, 245, 245),rgb(229, 229, 229));   /*the gradient will be from the center to the edges*/
+    background-color: rgb(240, 240, 240);   /*the gradient will be from the center to the edges*/
     
 }
 p {
@@ -109,11 +109,11 @@ div.looks {
     background-color: aliceblue;
 }
 p.style {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
     display: inline-block;
     text-align: left;
     font-size: clamp(0.5rem, 1.5vw, 3rem);
-    padding: 0 5px;
+    padding: 0 15px;
 }
 .picture1 {
     width: 50%;
@@ -140,8 +140,8 @@ p.style {
     height: auto;
 }
 .picture4 {
-    min-width: 80px;
-    width: 150%;
+    min-width: 70px;
+    width: 80%;
     max-width: 700px;
     height: auto;
 }

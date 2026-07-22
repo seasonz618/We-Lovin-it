@@ -1,4 +1,12 @@
 /* Author: Zac Lou, Admin No.:261097H */
 th {
     Font-weight: bold;
+    font-family: Arial;
+}
+td {
+    font-family: Arial;
+}
+h1 {
+    font-weight: bold;
+    font-family: Arial;
 }
