@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="../CSS files/main.css">
+    </head>
+    <element id="top"><nav><ul>
+
+    <li><a class="a1" href="Home.html">
+    <img src="../images/McDonalds-Logo.png" class="image1" alt="Home">
+    </a></li>
+
+    <li><a class="a2" href="https://www.instagram.com/mcdsg/">
+    <img src="../images/Instagram.png" class="image2" alt="IG">
+    </a></li>
+
+    <li><a href="locateus.html" class="Locate-us">Locate us
+    </a></li>
+
+    <li><a href= "#Order" class="Order">Order Now
+    </a></li>
+</ul></nav></element>
+
+    <body>How was your experience with us? Please fill out the form below to provide your feedback.
+        <h1>Feedback Form</h1>
+        <form action="thankyou.html" method="get">
+        </form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" size="30">
+        <p>Feedback:</p>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" size="30">
+        <br>
+        <label for="rating">Rating:</label>
+        <input type="range" id="rating" size="500" name="rating" min="1" max="10" step="1"><br>
+        <button type="submit" onclick="window.location.href='thankyou.html'">Submit Feedback</button>
+    </body>
