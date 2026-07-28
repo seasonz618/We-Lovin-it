@@ -1,87 +1,40 @@
 /* unfortunately done only by KUNG TIAN SHUN RAYDON 261348L*/
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);   /*the gradient will be from the center to the edges*/
+    box-sizing: border-box;
+    margin: 0;
+}
 nav.top ul { 
     font-family: Arial, sans-serif;
     position: fixed;                /*fixes the navigation bar at the top of the page*/
     display: flex;                  /*allows items to be displayed in a row at the center of the navigation bar vertically*/
-    align-items: center;            /*align item center makes all items align in the center of the nav bar*/
     list-style-type: none;          /*list-style-type: none; makes the list items display without bullet points*/
     background-color: #ed0103;
-    margin: 0;                      /*makes it so that there is no default margin/padding*/
-    padding: 0;
     width: 100%;                    /*makes the navigation bar span the entire width of the page*/
-    height: 10%;
-    min-height: 50px;               /*ensures that the % does not go over */
-    max-height: 220px;
-    left: 0;                        /*positions the navigation bar at the top-left corner of the page*/
-    top: 0;
-    z-index: 4;                     /*ensures the navigation bar is displayed above other elements*/
-    justify-content: center;        /*makes all items to be diaplayed in a row at the center of the navigation bar horizonatlly*/
+    margin-top: 0;
+    z-index: 1000;                     /*ensures the navigation bar is displayed above other elements*/
+    gap: 5%;
+    font-size: 5vw;
 }
 nav.top li a {
-    
-    display: flex;
     text-align: center;                         /*align the text in the center of the padding*/
-    padding: 5px 20px;
-    margin: 0 10px;
-    border-radius: 20px;                        /*curves the edges of the boxes border*/
-    background-color: #ffc72c;
+    padding: 0;
     color: #000000;
     text-decoration: none;                      /*removes the underline link*/
     font-weight: bold;
     transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
-    font-size: clamp(1.1rem, 2.5vw, 4rem);      /*changes the text size base on the screen use to view, 1.1rem being the smallest words can go and 4rem being the largest*/
-}                                               /*2.5vw makes the word equal to 2.5% of the screen width*/
-nav.top li a:hover {                               /*when the mouse hovers over the word, the below happens*/
+}                                               
+nav.top li a:hover {                               
     background-color: #edb313;                   
-}
-
-nav.side ul {
-    font-family: Arial, sans-serif;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 5%;
-    min-width: 80px;                            /*the smallest the width of the navigation bar can go is 80px*/
-    background-color: #ffc72c;
-    position: fixed;
-    align-items: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: 3;                                 /*ensures the navigation bar is displayed above other elements but not the first one*/
-}
-nav.side li a {
-    display: flex;
-    flex-direction: column;                     /*instead on going in a row, all tags will be followed by a column*/
-    justify-content:space-between; 
-    text-align: center;
-    margin: 100% 0;
-    padding: 20% 10%;
-    background-color: #ecb827;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: clamp(1rem, 1vw, 2rem);
-    transition: 0.2s ease-in-out;
-}
-
-nav.side li a:hover {
-    background-color: #ed0103;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    margin-top: 8%;
-    background-color: rgb(240, 240, 240);   /*the gradient will be from the center to the edges*/
-    
 }
 p {
     color: black;
     font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
 }
 p.heading {
+    padding-top: 6vw;
     margin: auto;                   /* makes the browser automatically centers the element*/
     font-size: 6vw;
     font-weight: bold;
@@ -90,10 +43,10 @@ p.heading {
 /*==========/
 / Home Page /========================================================================================================================================
 /==========*/
-
-.home{
+.home {
     overflow-x: hidden;
 }
+
 h1.title {
     text-align: center;
     font-size: 4vw;
@@ -102,8 +55,7 @@ h1.title {
 }
 div.looks {
     margin: auto;
-    width: auto;
-    height: 100%;
+    width: 90vw;
     display: flex;
     box-shadow: 4px 4px 10px;            /*gives the border a shadow*/
     background-color: aliceblue;
@@ -113,25 +65,21 @@ p.style {
     display: inline-block;
     text-align: left;
     font-size: clamp(0.5rem, 1.5vw, 3rem);
-    padding: 0 15px;
+    padding: 0 1%;    
 }
 .picture1 {
     width: 50%;
     height: auto;
 }
 .apps {
-    margin-top: 0;
-    width: 30%;
-    max-width: 200px;
+    max-width: 16vw;
     height: auto;
-    margin-left: 0;
 }
 .picture2 {
     background-color: #ed0103;
-    min-width: 100px;
-    width: 150%;
-    max-width: 700px;
-    height: auto;
+    max-width: 50%;
+    max-width: 50%;
+    max-height: auto;
 }
 .picture3 {
     min-width: 100px;
@@ -154,8 +102,6 @@ p.style {
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 30%;
-    margin-left: 70%;
 }
 .button2 {
     display: inline-block;
@@ -165,7 +111,6 @@ p.style {
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 30%;
 }
 .button3 {
     display: inline-block;
@@ -175,19 +120,17 @@ p.style {
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 35%;
-    margin-left: 70%;
 }
 footer {
-    align-self: center;
-    justify-content: center;
     display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
     margin-top: 5%;
-    margin-bottom: -50px;
     background-color: #ed0103;
     font-weight: bold;
     font-size: 1.8vw;
-    width: 100vw;
+    width: 100%;
 }
 footer ul {
     list-style-type: none;
