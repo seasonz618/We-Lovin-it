@@ -1,7 +1,14 @@
 dt {
+    font-weight: bold;
     font-family: sans-serif;
+    padding: 5px;
+    margin: 3px;
+    border: 2px solid darkblue;
+    color: aliceblue;
+    background: linear-gradient(
+yellow, red);;
 }
 
 dd{
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
