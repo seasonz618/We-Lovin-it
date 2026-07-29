@@ -4,6 +4,12 @@
     font-size: 1.25vw;
     font-family: Arial, Helvetica;
     margin: auto;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid red;
+    background: linear-gradient(
+        pink, yellow
+    );
 }
 .image {
     margin: auto;

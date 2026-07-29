@@ -8,4 +8,10 @@ td {
 h1 {
     font-weight: bold;
     font-family: sans-serif;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid red;
+    background: linear-gradient(
+        yellow, beige
+    );
 }
