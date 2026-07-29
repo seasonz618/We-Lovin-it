@@ -6,9 +6,16 @@ dt {
     border: 2px solid darkblue;
     color: aliceblue;
     background: linear-gradient(
-yellow, red);;
+darkorange, yellow);;
 }
 
 dd{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin: 5px;
+    border: 0.5px solid darkblue;
+    color:blueviolet;
+    background: linear-gradient(
+        lightblue, greenyellow
+    );
 }
