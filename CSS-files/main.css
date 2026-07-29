@@ -38,6 +38,7 @@ p.heading {
     margin: auto;                   /* makes the browser automatically centers the element*/
     font-size: 6vw;
     font-weight: bold;
+    padding-top: 6vw;
 }
 
 /*==========/
