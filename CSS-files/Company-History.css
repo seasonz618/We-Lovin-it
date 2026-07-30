@@ -6,7 +6,7 @@ dt {
     border: 2px solid darkblue;
     color: aliceblue;
     background: linear-gradient(
-darkorange, yellow);;
+yellow, brown);;
 }
 
 dd{
@@ -15,7 +15,5 @@ dd{
     margin: 5px;
     border: 0.5px solid darkblue;
     color:orangered;
-    background: linear-gradient(
-        lightblue, greenyellow
-    );
+    background-color: blanchedalmond;
 }

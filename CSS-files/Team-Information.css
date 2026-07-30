@@ -3,7 +3,7 @@ th {
    font-family: sans-serif;
 }
 td {
-    font-family: sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
 }
 h1 {
     font-weight: bold;
@@ -12,6 +12,6 @@ h1 {
     margin: 5px;
     border: 2px solid red;
     background: linear-gradient(
-        yellow, beige
+        aliceblue, darkblue
     );
 }
