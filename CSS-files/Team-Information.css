@@ -1,12 +1,17 @@
 /* Author: Zac Lou, Admin No.:261097H */
 th {
-    Font-weight: bold;
-    font-family: Arial;
+   font-family: sans-serif;
 }
 td {
-    font-family: Arial;
+    font-family: 'Lucida Sans', sans-serif;
 }
 h1 {
     font-weight: bold;
-    font-family: Arial;
+    font-family: sans-serif;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid red;
+    background: linear-gradient(
+        aliceblue, darkblue
+    );
 }

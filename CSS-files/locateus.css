@@ -1,5 +1,13 @@
 /* By Abel Lee Yu Xiang 261364D*/
-body { font-family: Arial, sans-serif; background-color: #ffffff;
+body { font-family: Arial, sans-serif;
+}
+
+p.heading {
+    padding-top: 6vw;
+    margin: auto;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-top: 2%;
 }
 
 .location-container{
@@ -16,18 +24,20 @@ body { font-family: Arial, sans-serif; background-color: #ffffff;
 }
 
 .location-box{
-    border: 2px solid black;
+    border: 0px solid black;
     padding: 20px;
-    background: #eef6ff;
+    background: aliceblue;
     border-radius: 10px;
     box-sizing: border-box;
+    box-shadow: 4px 4px 10px
 }
 
 .image5{
     width: 100%;
     height: auto;
-    border: 2px solid black;
+    border: 0px solid black;
     box-sizing: border-box;
+    box-shadow: 10px 10px 20px
 }
 
 .direction-button {
@@ -39,10 +49,11 @@ body { font-family: Arial, sans-serif; background-color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     margin-top: 10px;
+    transition: 0.2s ease-in-out;
 }
 
 .direction-button:hover {
-    background-color: #d53030
+    background-color: #ed0103
 }
 @media (max-width:768px){
 
