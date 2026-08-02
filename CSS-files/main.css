@@ -1,4 +1,4 @@
-/* unfortunately done only by KUNG TIAN SHUN RAYDON 261348L*/
+/*KUNG TIAN SHUN RAYDON 261348L*/
 body {
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     margin: 0;
 }
-nav.top ul { 
+nav ul { 
     font-family: Arial, sans-serif;
     position: fixed;                /*fixes the navigation bar at the top of the page*/
     display: flex;                  /*allows items to be displayed in a row at the center of the navigation bar vertically*/
@@ -18,7 +18,7 @@ nav.top ul {
     gap: 5%;
     font-size: 5vw;
 }
-nav.top li a {
+nav li a {
     text-align: center;                         /*align the text in the center of the padding*/
     padding: 0;
     color: #000000;
@@ -26,14 +26,14 @@ nav.top li a {
     font-weight: bold;
     transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
 }                                               
-nav.top li a:hover {                               
+nav li a:hover {                               
     background-color: #edb313;                   
 }
 p {
     color: black;
     font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
 }
-p.heading {
+.heading {
     padding-top: 6vw;
     margin: auto;                   /* makes the browser automatically centers the element*/
     font-size: 6vw;
@@ -57,6 +57,7 @@ h1.title {
 div.looks {
     margin: auto;
     width: 90vw;
+    max-height: fit-content;
     display: flex;
     box-shadow: 4px 4px 10px;            /*gives the border a shadow*/
     background-color: aliceblue;
@@ -79,48 +80,29 @@ p.style {
 .picture2 {
     background-color: #ed0103;
     max-width: 50%;
-    max-width: 50%;
     max-height: auto;
 }
 .picture3 {
-    min-width: 100px;
-    width: 150%;
-    max-width: 700px;
+    max-width: 50%;
     height: auto;
 }
 .picture4 {
     min-width: 70px;
-    width: 80%;
-    max-width: 700px;
+    max-width: 50%;
     height: auto;
 }
 
-.button1 {
-    display: inline-block;
+.button {
+    display: flex;
+    justify-self: center;
     background-color: #ffc72c;
     color: black;
-    padding: 10px 20px;
+    padding: 2%;
+    margin-top: 10%;
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-}
-.button2 {
-    display: inline-block;
-    background-color: #ffc72c;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.button3 {
-    display: inline-block;
-    background-color: #ffc72c;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
+    
 }
 footer {
     display: flex;
@@ -131,7 +113,7 @@ footer {
     background-color: #ed0103;
     font-weight: bold;
     font-size: 1.8vw;
-    width: 100%;
+    width: 100vw;
 }
 footer ul {
     list-style-type: none;
