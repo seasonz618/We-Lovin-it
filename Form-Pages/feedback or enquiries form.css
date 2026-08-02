@@ -2,81 +2,35 @@
 html {
     font-family: Arial, sans-serif;
 }
-#top nav ul { 
+nav.top ul { 
+    font-family: Arial, sans-serif;
     position: fixed;                
     display: flex;                  
-    align-items: center;            
     list-style-type: none;          
     background-color: #ed0103;
-    margin: 0;                      
-    padding: 0;
     width: 100%;                    
-    height: 10%;
-    min-height: 50px;               
-    max-height: 220px;
-    left: 0;                        
-    top: 0;
-    z-index: 4;                     
-    justify-content: center;        
+    margin-top: 0;
+    z-index: 1000;                     
+    gap: 5%;
+    font-size: 5vw;
 }
-#top li a {
-    transition: 0.2s ease-in-out;               
-    display: flex;
+nav.top li a {
     text-align: center;                         
-    margin: 0 10px;
-    padding: 5px 20px;
-    border-radius: 20px;                        
-    background-color: #ffc72c;
+    padding: 0;
     color: #000000;
     text-decoration: none;                      
     font-weight: bold;
-    font-size: clamp(1.1rem, 2.5vw, 4rem);      
+    transition: 0.2s ease-in-out;              
 }                                               
-#top li a:hover {                               
-    background-color: #edb313;                   
-}
-
-#side nav ul {
-    font-family: Arial, sans-serif;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 5%;
-    min-width: 80px;                            
-    background-color: #ffc72c;
-    position: fixed;
-    align-items: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: 3;                                 
-}
-#side li a {
-    display: flex;
-    flex-direction: column;                     
-    justify-content:space-between; 
-    text-align: center;
-    margin: 100% 0;
-    padding: 20% 10%;
-    background-color: #ecb827;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: clamp(1rem, 1vw, 2rem);
-    transition: background-color 0.2s ease-in-out;
-}
-
-#side li a:hover {
-    background-color: #ed0103;
+nav.top li a:hover {                               
+    background-color: #edb313;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    margin-top: 8%;
+    margin:0;
     background-color: #ffc72c;
-    
 }
 p {
     color: black;
