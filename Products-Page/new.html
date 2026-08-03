@@ -1,0 +1,75 @@
+<!--Author KANG CHENGXI, 261185R-->
+
+<!DoCtyPe hTMl>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placeholder</title>
+    <link rel="stylesheet" href="../CSS-files/products.css">
+	<link rel="stylesheet" href="../CSS-files/main.css">
+</head>
+
+<body>
+<nav class="top">
+	<ul>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="products.html">Menu</a></li>
+		<li><a href="new.html">Forms</a></li>
+		<li><a href="../Contacts-Us-Pages/contactus.html">Contacts</a></li>
+	</ul>
+</nav>
+
+<main class="main">
+<h1 class="header">Order Now</h1>
+
+<form action="thankyou.html" method="get" class="form">
+    <fieldset class="details">
+        <div class="nombre">
+            <h2>Order Form</h2>
+            <label for="custname">Name</label>
+            <input type="text" id="custname" name="custname" placeholder="ur name" required>
+        </div>
+
+        <div class="email">
+            <label for="custemail">Email</label>
+            <input type="email" id="custemail" name="custemail" placeholder="ur email" required>
+        </div>
+    </fieldset>
+
+    <fieldset class="food">
+        <h2>Menu</h2>
+        <div class="meat_sandwich">
+            <label for="burg1">Burger 1</label>
+            <input type="checkbox" id="burg1" name="burgers" value="Burger 1">
+            <label for="qty-burg1" class="qtylbl">Qty</label>
+            <input type="number" id="qty-burg1" name="qtyBurger1" min="0" value="0">
+        </div>
+
+        <div class="side">
+            <label for="burg2">Burger 2</label>
+            <input type="checkbox" id="burg2" name="burgers" value="Burger 2">
+            <label for="qty-burg2" class="qtylbl">Qty</label>
+            <input type="number" id="qty-burg2" name="qtyBurger2" min="0" value="0">
+        </div>
+
+        <div class="le_thirst_quenchers">
+            <label for="burg3">Burger 3</label>
+            <input type="checkbox" id="burg3" name="burgers" value="Burger 3">
+            <label for="qty-burg3" class="qtylbl">Qty</label>
+            <input type="number" id="qty-burg3" name="qtyBurger3" min="0" value="0">
+        </div>
+    </fieldset>
+
+    <section class="ordnotes">
+        <label for="ordnotes">special requests</label>
+        <textarea id="ordnotes" name="orderNotes" rows="4" placeholder="Add any extra requests or dietary notes."></textarea>
+    </section>
+
+    <button type="submit">Submit</button>
+</form>
+</main>
+
+</body>
+</html>

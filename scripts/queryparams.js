@@ -1,3 +1,4 @@
+// Literally just the code from the practical but I'll put it here for now
 
 const data = new URLSearchParams(window.location.search);
 
