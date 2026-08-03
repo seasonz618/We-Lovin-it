@@ -9,10 +9,10 @@ td {
     text-align: center;
     position: sticky;
 }
-th, td { border: 3px solid brown;
+th, td { border: 3px solid red;
 padding: 10px;}
     td {
-        color: rgb(0, 0, 0); background-color: rgba(251, 255, 0, 0.779);
+        color: brown; background-color: rgba(251, 255, 0, 0.779);
         text-align: left;
     }
     th {
@@ -20,3 +20,30 @@ padding: 10px;}
             color: rgba(251, 255, 0, 0.594);
             text-align:center
     }
+.zero {
+    font-family: sans-serif;
+    text-align: center;
+    color:cadetblue
+}
+.table1 {
+    margin-top: 7rem;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid Black;
+    color: gold;
+    background: linear-gradient(
+        DarkSlateGray, firebrick
+        );
+    text-align: center;
+}
+
+.table2 {
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid Black;
+    color: turquoise;
+    background: linear-gradient(
+        gray, crimson
+        );
+    text-align: center;
+}
