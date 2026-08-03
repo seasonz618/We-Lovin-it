@@ -30,9 +30,10 @@ padding: 10px;}
     padding: 10px;
     margin: 20px;
     border: 3px solid Black;
-    color: black;
-    background: linear-gradient
-    (blue, red);
+    color: gold;
+    background: linear-gradient(
+        DarkSlateGray, firebrick
+        );
     text-align: center;
 }
 
@@ -40,8 +41,9 @@ padding: 10px;}
     padding: 10px;
     margin: 20px;
     border: 3px solid Black;
-    color: black;
-    background: linear-gradient
-    (blue, red);
+    color: turquoise;
+    background: linear-gradient(
+        gray, crimson
+        );
     text-align: center;
 }
