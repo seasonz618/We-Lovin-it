@@ -9,14 +9,14 @@ td {
     text-align: center;
     position: sticky;
 }
-th, td { border: 3px solid orangered;
+th, td { border: 3px solid brown;
 padding: 10px;}
     td {
-        color: rgb(0, 0, 0); background-color: rgb(251, 255, 0);
+        color: rgb(0, 0, 0); background-color: rgba(251, 255, 0, 0.779);
         text-align: left;
     }
     th {
-        background-color: rgb(189, 63, 9);
-            color: rgb(251, 255, 0);
+        background-color: rgba(189, 63, 9, 0.874);
+            color: rgba(251, 255, 0, 0.594);
             text-align:center
     }
