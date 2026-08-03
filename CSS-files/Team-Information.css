@@ -5,7 +5,12 @@ th {
 td {
     font-family: 'Lucida Sans', sans-serif;
 }
- table { border-collapse: collapse; }
+ table.table1 { border-collapse: collapse; 
+    text-align: center;
+}
+table.table2 { border-collapse: collapse; 
+    text-align: center;
+}
 th, td { border: 3px solid #f90202;
 padding: 16px;}
     td {
