@@ -33,12 +33,12 @@
 
 .ordnwbutton {
 	margin-left: auto;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 12px 20px;
 	border-radius: 999px;
-	background: #ffbc0d;
+	background: #ed0103;
 	color: #222;
 	text-decoration: none;
 	font-weight: 700;
@@ -47,7 +47,7 @@
 }
 
 .ordnwbutton:hover {
-	background: #ed0103;
+	background: #ffbc0d;
 }
 
 /**/
