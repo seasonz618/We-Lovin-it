@@ -5,3 +5,13 @@ th {
 td {
     font-family: 'Lucida Sans', sans-serif;
 }
+ table { border-collapse: collapse; }
+th, td { border: 3px solid #f90202;
+padding: 16px;}
+    td {
+        color: rgb(0, 0, 0); background-color: rgb(251, 255, 0);
+    }
+    th {
+        background-color: rgb(189, 63, 9);
+            color: rgb(251, 255, 0);
+    }
