@@ -5,11 +5,7 @@ th {
 td {
     font-family: 'Lucida Sans', sans-serif;
 }
- table.table1 { border-collapse: collapse; 
-    text-align: center;
-    position: sticky;
-}
-table.table2 { border-collapse: collapse; 
+ table { border-collapse: collapse; 
     text-align: center;
     position: sticky;
 }
