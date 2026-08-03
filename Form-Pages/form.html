@@ -19,16 +19,15 @@ initial-scale=1.0">
 
 </ul></nav>
 <div class="form-center-wrapper">
+    <h1>Feedback or Enquiries Form</h1>
     <p>How was your experience with us? Please fill out the form below to provide your feedback.</p>
-        <h1>Feedback or Enquiries Form</h1>
         <form action="Feedback form thank you.html" method="get">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" size="30" placeholder="Enter your name" required title="hello">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" size="30" placeholder="example@email.com">
+        <input type="email" id="email" name="email" size="30" placeholder="example@email.com" required>
         <label for="form-type">What type of form do you want to send</label>
-        <select id="form-type"name="form-type" required>
-          <option value=""disabled selected hidden>Select an option...</option>
+        <select id="form-type"name="form-type" placeholder="Select an option" required>
           <option value="feedback">Feedback</option>
           <option value="enquiry">Enquiry</option>
         </select>
@@ -36,7 +35,7 @@ initial-scale=1.0">
         <textarea id="what feedback/enquiry would you like to ask" name="what feedback/enquiry would you like to ask" rows="4" cols="50" placeholder="Write your feedback/enquiries here" required></textarea>
         
         <br>
-        <button type="submit">Submit Feedback</button>
+        <button type="submit">Submit</button>
         <a href="../index.html">
           <button type="button" class="form button">Back to Home</button>
         </a>
