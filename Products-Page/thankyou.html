@@ -9,6 +9,7 @@
     <title>ty</title>
     <link rel="stylesheet" href="../CSS-files/products.css">
 	<link rel="stylesheet" href="../CSS-files/main.css">
+	<meta http-equiv="refresh" content="67;url=products.html">
 </head>
 
 <body class="body">
@@ -22,3 +23,18 @@
 </nav>
 
 <h1 style="margin-top: 5rem; text-align: center;">Thank you for your order!</h1>
+<p id="redirect-msg" style="text-align: center; margin-top: 1rem;">Thank you for your order! You will be redirected to the menu in 67 seconds. <a href="products.html">Click here</a> if not redirected.</p>
+
+<script>
+	(function() {
+		const lmao = new URLSearchParams(location.search);
+		const name = lmao.get('custname');
+		if (name) {
+			const h = document.querySelector('h1');
+			h.textContent = `Thank you for your order, ${decodeURIComponent(name)}!`;
+		}
+	})();
+</script>
+
+</body>
+</html>
