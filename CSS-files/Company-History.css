@@ -1,19 +1,22 @@
+/* Author: Zac Lou, Admin No.:261097H */
 dt {
     font-weight: bold;
     font-family: sans-serif;
     padding: 5px;
     margin: 3px;
-    border: 2px solid darkblue;
-    color: aliceblue;
+    border: 2px solid black;
+    color: orangered;
     background: linear-gradient(
 yellow, brown);;
 }
 
 dd{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto, sans-serif;
     padding: 10px;
     margin: 5px;
     border: 0.5px solid darkblue;
-    color:orangered;
-    background-color: blanchedalmond;
+    color: DarkSlateGray;
+    background: linear-gradient(
+        blanchedalmond, aliceblue
+    );
 }

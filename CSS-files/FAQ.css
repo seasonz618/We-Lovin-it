@@ -1,8 +1,10 @@
+/* Author: Lou Jinheng Zac, Admin No.: 261097H */
 h1.title {
    font-family: sans-serif;
    padding: 20px;
    margin: 10px;
    border: 3px solid orangered;
+   color: black;
    background: linear-gradient(
     magenta, beige
    )
@@ -13,11 +15,11 @@ h2.qna {
     margin: 20px;
     border: 1px solid purple;
     background-color: aliceblue;
-    color: black;
+    color: chocolate;
 }
 
-p {
-    color: aliceblue;
+p.answer {
+    color: green;
 }
 
 h2:hover {

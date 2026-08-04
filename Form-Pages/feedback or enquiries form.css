@@ -1,91 +1,47 @@
-/*Yue Soon Jit, Emilio, 261397X*/
+/*Yue Soon Jit, Emilio 261397X and Kung Tian Shun Raydon 261348L*/
 html {
     font-family: Arial, sans-serif;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc72c;
+    box-sizing: border-box;
+    margin: 0;
+}
 nav.top ul { 
     font-family: Arial, sans-serif;
-    position: fixed;                
-    display: flex;                  
-    list-style-type: none;          
+    position: fixed;                /*fixes the navigation bar at the top of the page*/
+    display: flex;                  /*allows items to be displayed in a row at the center of the navigation bar vertically*/
+    list-style-type: none;          /*list-style-type: none; makes the list items display without bullet points*/
     background-color: #ed0103;
-    width: 100%;                    
+    width: 100%;                    /*makes the navigation bar span the entire width of the page*/
     margin-top: 0;
-    z-index: 1000;                     
+    z-index: 1000;                     /*ensures the navigation bar is displayed above other elements*/
     gap: 5%;
     font-size: 5vw;
 }
 nav.top li a {
-    text-align: center;                         
+    text-align: center;                         /*align the text in the center of the padding*/
     padding: 0;
     color: #000000;
-    text-decoration: none;                      
+    text-decoration: none;                      /*removes the underline link*/
     font-weight: bold;
-    transition: 0.2s ease-in-out;              
+    transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
 }                                               
 nav.top li a:hover {                               
-    background-color: #edb313;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    margin:0;
-    background-color: #ffc72c;
+    background-color: #edb313;                   
 }
 p {
     color: black;
-    font-family: Arial sans-serif;  
+    font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
 }
-p.heading {
-    margin: auto;                   
-    font-size: 6vw;
-    font-weight: bold;
-}
-
 /*==========/
 / Home Page /===================================================================================
 /==========*/
 
 
 
-h1.title {
-    text-align: center;
-    font-size: 4vw;
-    font-weight: bold;
-    text-decoration: underline;         
-}
-div.looks {
-    margin: auto;
-    width: auto;
-    height: 100%;
-    display: flex;
-    box-shadow: 4px 4px 10px;            
-    background-color: aliceblue;
-}
-p.style {
-    display: block;
-    text-align: left;
-    font-size: clamp(0.5rem, 1.5vw, 2rem);
-    padding: 0 5px;
-}
-.picture1 {
-    width: 50%;
-    height: auto;
-}
-.picture2 {
-    background-color: #ed0103;
-    width: 40%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-}
-.apps {
-    margin-top: 0;
-    width: 30%;
-    max-width: 200px;
-    height: auto;
-    margin-left: 0;
-}
 footer {
     display: block;
     margin-top: 20%;
@@ -106,7 +62,9 @@ button {
 .form-center-wrapper {
     width: 100%;
     max-width: 500px;
-    margin: 10px auto;
+
+    margin: 100px auto 50px auto;
+
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -125,25 +83,31 @@ textarea::placeholder {
     font-size: 14px;
 }
 .thank-you-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 150px auto 0 auto;
-    position: relative;
-    left: -50px; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    
+    width: 100%;
+    max-width: 600px;
+    height: 100vh;
+
+    margin: 0 auto;
+    position: relative;
+    left: -10px;
     gap: 15px;
+
+    
 }
 .thank-you-container h1 {
-    color: #111111;
+    color: #000000;
     font-family: Arial, Helevetica, sans-serif;
     font-weight: bold;
     font-size: 32px;
 }
 .thank-you-container p {
-    color: #111111;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 18px;

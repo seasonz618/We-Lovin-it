@@ -5,21 +5,21 @@
 	src: url('../fonts/McDonalds_Helvetica.ttf') format('truetype');
 }
 
-body {
+.body {
 	font-family: "McDonalds_Helvetica";
 	color: #222;
 	background: #fff;
 	line-height: 1.4;
 }
 
-main {
+.main {
 	max-width: 980px;
 	margin: 36px auto;
 	padding: 0 18px;
 	overflow-x: auto;
 }
 
-.header {
+.header { 
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -28,6 +28,29 @@ main {
 	margin-bottom: 18px;
 	padding-top: 6vw;
 }
+
+/**/
+
+.ordnwbutton {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 20px;
+	border-radius: 999px;
+	background: #ed0103;
+	color: #222;
+	text-decoration: none;
+	font-weight: 700;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+	transition: background-color 0.2s ease-in-out
+}
+
+.ordnwbutton:hover {
+	background: #ffbc0d;
+}
+
+/**/
 
 .table {
 	width: 100%;
@@ -109,4 +132,155 @@ as well as reducing row spacing and hiding desc. column. */
 	height: 60px;
 }
 
+}
+
+/* New code for new.html */
+
+.form {
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.08);
+	border-radius: 18px;
+	padding: 24px;
+	box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+.details,
+.food {
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.06);
+	border-radius: 16px;
+	padding: 18px 20px;
+	margin-bottom: 18px;
+}
+
+.details h2,
+.food h2 {
+	margin: 0 0 14px;
+	color: #222;
+	font-size: 1.2rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 6px;
+	color: #222;
+	font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+	width: 100%;
+	max-width: 420px;
+	padding: 12px 14px;
+	border: 1px solid rgba(0,0,0,0.12);
+	border-radius: 14px;
+	background: #fff;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+	outline: none;
+	border-color: #ffbc0d;
+	box-shadow: 0 0 0 4px rgba(255,188,13,0.12);
+}
+
+.meat_sandwich,
+.side,
+.le_thirst_quenchers {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.meat_sandwich:last-child,
+.side:last-child,
+.le_thirst_quenchers:last-child {
+	border-bottom: none;
+}
+
+.qtylbl {
+	color: #444;
+	font-weight: 500;
+}
+
+input[type="checkbox"] {
+	width: auto;
+	margin-left: 8px;
+}
+
+.ordnotes {
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.06);
+	border-radius: 16px;
+	padding: 18px 20px;
+	margin-bottom: 18px;
+}
+
+.ordnotes label {
+	margin-bottom: 10px;
+}
+
+.ordnotes textarea {
+	width: 100%;
+	min-height: 140px;
+	padding: 14px 16px;
+	border: 1px solid rgba(0,0,0,0.12);
+	border-radius: 14px;
+	background: #fff;
+	color: #222;
+	resize: vertical;
+	font-family: inherit;
+	line-height: 1.5;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ordnotes textarea:focus {
+	outline: none;
+	border-color: #ffbc0d;
+	box-shadow: 0 0 0 4px rgba(255,188,13,0.12);
+}
+
+button[type="submit"] {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 999px;
+	background: #ffbc0d;
+	color: #222;
+	font-weight: 700;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out
+}
+
+button[type="submit"]:hover {
+
+	background: #e6a300;
+}
+
+@media (max-width: 500px) {
+	.form {
+		padding: 18px;
+	}
+
+	.top ul {
+		gap: 10px;
+	}
+
+	.meat_sandwich,
+	.side,
+	.le_thirst_quenchers {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	input[type="number"] {
+		max-width: 100%;
+	}
 }
