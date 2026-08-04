@@ -5,9 +5,9 @@ dt {
     padding: 5px;
     margin: 3px;
     border: 2px solid goldenrod;
-    color: orangered;
+    color: red;
     background: linear-gradient(
-yellow, brown);;
+rgba(255, 255, 0, 0.799), brown);;
 }
 
 dd{
