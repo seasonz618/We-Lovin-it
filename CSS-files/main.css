@@ -35,7 +35,7 @@ p {
 }
 .heading {
     padding-top: 6vw;
-    margin: auto;                   /* makes the browser automatically centers the element*/
+    text-align: center;        /* makes the text centers*/
     font-size: 6vw;
     font-weight: bold;
     padding-top: 6vw;
@@ -44,10 +44,26 @@ p {
 /*==========/
 / Home Page /========================================================================================================================================
 /==========*/
+/*Welcome page=======================================================================================================================================*/
+.welcome {
+    background-image: linear-gradient(rgba(255, 32, 32, 0.5), rgba(240, 240, 240, 0.5)),
+                        url(../images/mcdonald.webp);
+    width: 100vw;
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-position: center 5.4vw;
+    background-size: contain;
+}
+.subtitle {
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+/*Home page contents===============================================================================================================================*/
 .home {
     overflow-x: hidden;
 }
-
 h1.title {
     text-align: center;
     font-size: 4vw;
@@ -57,7 +73,6 @@ h1.title {
 div.looks {
     margin: auto;
     width: 90vw;
-    max-height: fit-content;
     display: flex;
     box-shadow: 4px 4px 10px;            /*gives the border a shadow*/
     background-color: aliceblue;
@@ -66,30 +81,32 @@ p.style {
     font-family: 'Times New Roman', serif;
     display: inline-block;
     text-align: left;
-    font-size: clamp(0.5rem, 1.5vw, 3rem);
+    font-size: 2vw;
     padding: 0 1%;    
-}
-.picture1 {
-    width: 50%;
-    height: auto;
 }
 .apps {
     max-width: 16vw;
     height: auto;
 }
+.picture1 {
+    width: 50%;
+    object-fit: cover;
+}
 .picture2 {
     background-color: #ed0103;
-    max-width: 50%;
-    max-height: auto;
+    max-width: 45vw;
+    height: auto;
+    object-fit: contain;
 }
 .picture3 {
-    max-width: 50%;
+    max-width: 45vw;
     height: auto;
+    object-fit: cover;
 }
 .picture4 {
-    min-width: 70px;
-    max-width: 50%;
+    max-width: 45vw;
     height: auto;
+    object-fit: cover;
 }
 
 .button {
@@ -104,6 +121,7 @@ p.style {
     font-weight: bold;
     
 }
+/* Bottom bar for About us and Mcd Insta page============================================================================================================*/
 footer {
     display: flex;
     margin: 0;
@@ -121,4 +139,14 @@ footer ul {
 footer ul a {
     color: #000000; 
 }
-
+/*very important to not get copyrighted==================================================================================================================*/
+.important {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 3%;
+    margin: 0;
+    background-color: #ed0103;
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-decoration: underline;
+}
