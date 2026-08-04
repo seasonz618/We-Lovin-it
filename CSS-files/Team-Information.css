@@ -24,7 +24,10 @@ padding: 10px;}
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
-    color:cadetblue;
+    color:darkgoldenrod;
+    background: linear-gradient(
+        skyblue, cadetblue
+        );
 }
 .table1 {
     margin-top: 7rem;
