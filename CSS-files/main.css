@@ -57,6 +57,21 @@ nav li a:hover {
     background-color: #edb313;
     transition: 0.2s;               /*the time taken for the background to fully change to the new background colour*/                  
 }
+<<<<<<< HEAD
+=======
+p {
+    color: black;
+    font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the serif design*/
+}
+.heading {
+    padding-top: 6vw;
+    text-align: center;        /* makes the text centers*/
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 6vw;
+}
+
+>>>>>>> a1cb214fdc15429c26724e67e43b27203b582d0b
 /*==========/
 / Home Page /========================================================================================================================================
 /==========*/
