@@ -22,8 +22,9 @@ padding: 10px;}
     }
 .zero {
     font-family: sans-serif;
+    font-weight: bold;
     text-align: center;
-    color:cadetblue
+    color:cadetblue;
 }
 .table1 {
     margin-top: 7rem;
