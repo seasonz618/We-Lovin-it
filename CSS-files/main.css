@@ -31,7 +31,7 @@ nav li a:hover {
 }
 p {
     color: black;
-    font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
+    font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the serif design*/
 }
 .heading {
     padding-top: 6vw;
