@@ -10,7 +10,7 @@
     background: linear-gradient(
         lavender, darkorange
     );
-    box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px gold;
 }
 .vision {
     font-weight: bold;
@@ -23,7 +23,7 @@
     background: linear-gradient(
         crimson, violet
     );
-    box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px silver;
 }
 .image {
     margin: auto;
