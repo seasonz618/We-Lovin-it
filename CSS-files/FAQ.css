@@ -4,10 +4,11 @@ h1.title {
    padding: 20px;
    margin: 10px;
    border: 3px solid orangered;
-   color: black;
    background: linear-gradient(
     magenta, beige
-   )
+   );
+   text-decoration: none;
+   color: darkslategray;
 }
 h2.qna {
     font-family: Arial, Helvetica, sans-serif;
