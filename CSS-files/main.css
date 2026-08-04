@@ -1,11 +1,39 @@
 /*KUNG TIAN SHUN RAYDON 261348L*/
+/*General css for almost all pages===============================================================================================================================================*/
+html {
+    height: 100%;
+}
 body {
     display: flex;
     flex-direction: column;
     background-color: rgb(240, 240, 240);   /*the gradient will be from the center to the edges*/
     box-sizing: border-box;
     margin: 0;
+    min-height: 100%;
 }
+p {
+    color: black;
+    font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
+}
+.heading {
+    padding-top: 6vw;
+    text-align: center;        /* makes the text centers*/
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 6vw;
+}
+/*very important to not get copyrighted==================================================================================================================*/
+.important {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 3%;
+    margin: 0;
+    background-color: #ed0103;
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*Navi bar==========================================================================================================================================================*/
 nav ul { 
     font-family: Arial, sans-serif;
     position: fixed;                /*fixes the navigation bar at the top of the page*/
@@ -24,27 +52,15 @@ nav li a {
     color: #000000;
     text-decoration: none;                      /*removes the underline link*/
     font-weight: bold;
-    transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
 }                                               
 nav li a:hover {                               
-    background-color: #edb313;                   
+    background-color: #edb313;
+    transition: 0.2s;               /*the time taken for the background to fully change to the new background colour*/                  
 }
-p {
-    color: black;
-    font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
-}
-.heading {
-    padding-top: 6vw;
-    text-align: center;        /* makes the text centers*/
-    font-size: 6vw;
-    font-weight: bold;
-    padding-top: 6vw;
-}
-
 /*==========/
 / Home Page /========================================================================================================================================
 /==========*/
-/*Welcome page=======================================================================================================================================*/
+/*Welcome =======================================================================================================================================*/
 .welcome {
     background-image: linear-gradient(rgba(255, 32, 32, 0.5), rgba(240, 240, 240, 0.5)),
                         url(../images/mcdonald.webp);
@@ -108,7 +124,6 @@ p.style {
     height: auto;
     object-fit: cover;
 }
-
 .button {
     display: flex;
     justify-self: center;
@@ -122,7 +137,7 @@ p.style {
     
 }
 /* Bottom bar for About us and Mcd Insta page============================================================================================================*/
-footer {
+.about {
     display: flex;
     margin: 0;
     align-items: center;
@@ -133,20 +148,305 @@ footer {
     font-size: 1.8vw;
     width: 100vw;
 }
-footer ul {
+.about ul {
     list-style-type: none;
 }
-footer ul a {
+.about ul a {
     color: #000000; 
 }
-/*very important to not get copyrighted==================================================================================================================*/
-.important {
-    text-align: center;
-    width: 100%;
-    padding-bottom: 3%;
-    margin: 0;
-    background-color: #ed0103;
-    font-size: 1.7vw;
+/*Gemini AI and W3Schools were used in the making of the home page css*/
+/*==================/
+/ Contact us Page /========================================================================================================================================
+/==================
+/ By Abel Lee Yu Xiang 261364D*/
+
+p.heading {
+    padding-top: 6vw;
+    margin: 0 auto;
+    font-size: 6vw;
     font-weight: bold;
-    text-decoration: underline;
+    margin-top: 3.5%;
 }
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.contact-box {
+    width: 70%;
+    height: 90px;
+    box-sizing: border-box;
+    border: 0px solid black;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px
+}
+
+.bold-text {
+    font-weight: 750;
+    font-family: Arial, sans-serif;
+}
+
+.direction-button {
+    display: inline-block;
+    background-color: #ffc72c;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: -3px;
+    transition: 0.2s ease-in-out;
+}
+
+.location-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding: 20px;
+    height: auto;
+    min-height: 140px;
+}
+
+.direction-button:hover {
+    background-color: #ed0103
+}
+
+@media screen and (max-width: 600px) {
+    .contact-box {
+        width: 85%;
+        height: auto;
+        min-height: 90px;
+        padding: 15px;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+p.heading {
+        font-size: 12vw;
+    }
+}
+/*==========/
+/ Locate us Page /========================================================================================================================================
+/==========
+/ By Abel Lee Yu Xiang 261364D*/
+
+p.header {
+    padding-top: 6vw;
+    margin: 0 auto;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.location-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px;
+}
+
+.location-box1,
+.image-box{
+    width: 487px;
+}
+
+.location-box1{
+    border: 0px solid black;
+    padding: 20px;
+    background: aliceblue;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px
+}
+
+.image5{
+    width: 100%;
+    height: auto;
+    border: 0px solid black;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px
+}
+
+.direction-button {
+    display: inline-block;
+    background-color: #ffc72c;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.direction-button:hover {
+    background-color: #ed0103
+}
+@media (max-width:768px){
+
+    .location-container{
+        flex-direction:column;
+        align-items:center;
+        margin:20px;
+    }
+
+    .location-box1,
+    .image-box{
+        width:100%;
+        max-width:500px;
+    }
+
+    .image5{
+        width:100%;
+        height:auto;
+    }
+}
+/*==========/
+/ About us Pages /========================================================================================================================================
+/==========
+/ All done by: Author: Lou Jinheng Zac, Admin No.: 261097H
+/ Company History /=========================================================================================================================================*/
+dt {
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px;
+    margin: 3px;
+    border: 2px solid black;
+    color: orangered;
+    background: linear-gradient(
+yellow, brown);;
+}
+
+dd{
+    font-family: Roboto, sans-serif;
+    padding: 10px;
+    margin: 5px;
+    border: 0.5px solid darkblue;
+    color: DarkSlateGray;
+    background: linear-gradient(
+        blanchedalmond, aliceblue
+    );
+}
+/* Company Mission and Vision /=========================================================================================================================================*/
+.mission {
+    font-weight: bold;
+    font-size: 1.25vw;
+    font-family: Arial, Helvetica;
+    margin: auto;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid red;
+    background: linear-gradient(
+        lavender, darkorange
+    );
+    box-shadow: inset 0 0 10px #000000;
+}
+.vision {
+    font-weight: bold;
+    font-size: 1.25vw;
+    font-family: Arial, Helvetica;
+    margin: auto;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid red;
+    background: linear-gradient(
+        crimson, violet
+    );
+    box-shadow: inset 0 0 10px #000000;
+}
+.image {
+    margin: auto;
+    box-shadow: 10px 0 10px #000000;
+}
+/* Team Information /=========================================================================================================================================*/
+.TI th {
+   font-family: sans-serif;
+}
+.TI td {
+    font-family: 'Lucida Sans', sans-serif;
+}
+ .TI table { border-collapse: collapse; 
+    text-align: center;
+    position: sticky;
+}
+.TI th, .TI td { border: 3px solid red;
+padding: 10px;}
+    .TI td {
+        color: brown; background-color: rgba(251, 255, 0, 0.779);
+        text-align: left;
+    }
+    .TI th {
+        background-color: rgba(189, 63, 9, 0.874);
+            color: rgba(251, 255, 0, 0.594);
+            text-align:center
+    }
+.zero {
+    font-family: sans-serif;
+    text-align: center;
+    color:cadetblue
+}
+.table1 {
+    margin-top: 7rem;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid Black;
+    color: gold;
+    background: linear-gradient(
+        DarkSlateGray, firebrick
+        );
+    text-align: center;
+}
+
+.table2 {
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid Black;
+    color: turquoise;
+    background: linear-gradient(
+        gray, crimson
+        );
+    text-align: center;
+}
+/* Faq page /=========================================================================================================================================*/
+h1.title1 {
+   font-family: sans-serif;
+   padding: 20px;
+   margin: 10px;
+   border: 3px solid orangered;
+   color: black;
+   background: linear-gradient(
+    magenta, beige
+   )
+}
+h2.qna {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid purple;
+    background-color: aliceblue;
+    color: chocolate;
+}
+
+p.answer {
+    color: green;
+}
+
+h2:hover {
+background-color: #ffbc0d;
+}
+/*=========================================================================================================================================================================*/
