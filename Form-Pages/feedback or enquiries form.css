@@ -1,27 +1,25 @@
 /*Yue Soon Jit, Emilio 261397X and Kung Tian Shun Raydon 261348L*/
-html {
-    font-family: Arial, sans-serif;
-}
 body {
     display: flex;
     flex-direction: column;
-    background-color: #ffc72c;
+    background-color: rgb(240, 240, 240);   /*the gradient will be from the center to the edges*/
     box-sizing: border-box;
     margin: 0;
 }
-nav.top ul { 
+nav ul { 
     font-family: Arial, sans-serif;
     position: fixed;                /*fixes the navigation bar at the top of the page*/
     display: flex;                  /*allows items to be displayed in a row at the center of the navigation bar vertically*/
     list-style-type: none;          /*list-style-type: none; makes the list items display without bullet points*/
     background-color: #ed0103;
     width: 100%;                    /*makes the navigation bar span the entire width of the page*/
+    left: 0;
     margin-top: 0;
     z-index: 1000;                     /*ensures the navigation bar is displayed above other elements*/
     gap: 5%;
     font-size: 5vw;
 }
-nav.top li a {
+nav li a {
     text-align: center;                         /*align the text in the center of the padding*/
     padding: 0;
     color: #000000;
@@ -29,12 +27,19 @@ nav.top li a {
     font-weight: bold;
     transition: 0.2s ease-in-out;               /*the time taken for the background to fully change to the new background colour*/
 }                                               
-nav.top li a:hover {                               
+nav li a:hover {                               
     background-color: #edb313;                   
 }
 p {
     color: black;
     font-family: Arial, sans-serif;  /* font will be in Arial and the start and end of a letter will not have the sans serif design*/
+}
+.heading {
+    padding-top: 6vw;
+    margin: auto;                   /* makes the browser automatically centers the element*/
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 6vw;
 }
 /*==========/
 / Home Page /===================================================================================
@@ -63,7 +68,7 @@ button {
     width: 100%;
     max-width: 500px;
 
-    margin: 100px auto 50px auto;
+    margin: 80px auto 50px auto;
 
     align-self: center;
     display: flex;
@@ -77,10 +82,30 @@ form {
 }
 input,
 textarea,
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 input::placeholder,
 textarea::placeholder {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+body {
+    background-color: #ffc72c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .thank-you-container {
     display: flex;
@@ -90,16 +115,19 @@ textarea::placeholder {
     text-align: center;
     
     width: 100%;
-    max-width: 600px;
-    height: 100vh;
-
+    max-width: 750px;
     margin: 0 auto;
-    position: relative;
-    left: -10px;
+   
     gap: 15px;
 
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
+    padding: 60px 40px;
 }
+
 .thank-you-container h1 {
     color: #000000;
     font-family: Arial, Helevetica, sans-serif;
@@ -113,6 +141,16 @@ textarea::placeholder {
     font-size: 18px;
     text-align: center;
 }
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%; 
+    max-width: 500px;
+    margin-top: 15px;
+
+    gap: 10px;
+}
 .home-btn {
     display: inline-flex;
     align-items: center;
@@ -125,9 +163,8 @@ textarea::placeholder {
     font-weight: bold;
     font-size: 16px;
 
-    width: 100%;
-    max-width: 500px;
-    height: 52px;
+    width: 120px;
+    height: 45px;
 
     border: none;
     border-radius: 15px;
@@ -136,9 +173,8 @@ textarea::placeholder {
     box-sizing: border-box;
 }
 form button {
-    width: 100%;
-    max-width: 500px;
-    height: 55px;
+    width: 120px;
+    height: 45px;
     padding: 0;
     box-sizing: border-box;
     background-color: #ed0103;
