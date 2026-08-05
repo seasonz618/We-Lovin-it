@@ -181,3 +181,13 @@ form button {
     color: #000000;
     border: none;
 }
+.important {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 3%;
+    margin: 0;
+    background-color: #ed0103;
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-decoration: none;
+}
