@@ -18,16 +18,19 @@
 	position: fixed;
 	padding: 0px;
 	margin: 0px;
-	z-index: 100;
+	z-index: 67;
 }
 
 .nav ul {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	gap: 1rem;
+	align-items: center;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	flex-wrap: wrap;
 	list-style-type: none;
 	background-color: #ed0103;
 }
@@ -40,7 +43,7 @@
 .nav li {
 	display: flex;
 	align-items: center;
-	margin: 0px 10px 0px;
+	margin: 0px;
 }
 
 .nav a {
@@ -72,7 +75,7 @@
 
 .header h1,
 .header a {
-	margin: 30px 50px;
+	margin: 2rem 3rem;
 }
 
 .button {
@@ -130,6 +133,24 @@
 	font-weight: 700;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
 
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.nav ul {
+		gap: 0px;
+	}
+
+	.nav a {
+		padding: 10px;
+	}
+
+	.header h1,
+	.header a {
+		margin: 1rem;
+	}
 }
