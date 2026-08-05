@@ -6,34 +6,82 @@
 }
 
 .body {
-    font-family: "McDonalds_Helvetica";
+    font-family: McDonalds_Helvetica;
 	color: #222;
 	background-color: #fff;
 	margin: 0px;
 }
 
-.main {
-	width: 90%;
-	max-width: 1000px;
-	margin: 0px auto;
+.nav {
+	height: 70px;
+	min-width: 100%;
+	position: fixed;
 	padding: 0px;
+	margin: 0px;
+	z-index: 100;
+}
+
+.nav ul {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	list-style-type: none;
+	background-color: #ed0103;
+}
+
+.nav img {
+	max-height: 40px;
+	width: auto;
+}
+
+.nav li {
+	display: flex;
+	align-items: center;
+	margin: 0px 10px 0px;
+}
+
+.nav a {
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: inherit;
+	transition: 0.2s ease-in-out;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.txthyplnks:hover {
+	background-color: #ffbc0d;
+}
+
+.main {
+	min-width: 100%;
+	max-width: 1000px;
+	padding: 70px 0px 0px 0px;
 	overflow-x: auto;
 }
 
 .header {
+	min-height: 70px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
+.header h1,
+.header a {
+	margin: 30px 50px;
+}
+
 .button {
 	margin: 0%;
-	padding: 15px 30px;
-	border-radius: 999px; /* pill */
+	padding: 15px 25px;
+	border-radius: 10px;
 	background-color: #ffbc0d;
 	color: #222;
 	text-decoration: none;
-	font-weight: 700;
 	transition: 0.2s ease-in-out;
 }
 
@@ -43,6 +91,7 @@
 
 .table {
 	width: 100%;
+	padding: 0px 30px;
 	border-collapse: separate;
 	border-spacing: 0px 10px;
 	background-color: #fff;
@@ -53,17 +102,23 @@
 	padding: 10px 10px;
 	text-align: center;
 	vertical-align: middle;
-	border-bottom: 1px solid #dbd9d9;
 }
 
-.table tbody tr td:first-child {
+.table tbody tr {
+	transition: 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+	background-color: #ffbc0d;
+}
+
+.table td:first-child {
 	border-radius: 10px 0px 0px 10px; /* applies border radius in order of topl topr botr botl */
 }
 
-.table tbody tr td:last-child {
-	border-radius: 0px 10px 10px 0px; /* this rounds the left and right corners of the first and last childs respectively */
+.table td:last-child {
+	border-radius: 0px 10px 10px 0px; /* rounds the left and right corners of the first and last child elements respectively */
 }
-
 
 .image img {
 	width: 100%;
@@ -73,4 +128,8 @@
 
 .price {
 	font-weight: 700;
+}
+
+@media (max-width: 500px) {
+
 }
