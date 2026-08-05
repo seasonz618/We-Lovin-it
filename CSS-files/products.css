@@ -212,8 +212,9 @@
 }
 
 .form input[type="text"],
-.form input[type="email"] {
-    width: 80%;
+.form input[type="email"],
+.form textarea {
+    width: 100%;
     padding: 0.95rem 1rem;
     border: 1px solid #d9d9d9;
     border-radius: 12px;
@@ -222,8 +223,14 @@
     transition: border-color 0.2s ease;
 }
 
+.form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
 .form input[type="text"]:focus,
-.form input[type="email"]:focus {
+.form input[type="email"]:focus,
+.form textarea:focus {
     border-color: #ffbc0d;
 }
 
@@ -300,5 +307,79 @@
 
     .form button {
         width: 100%;
+    }
+}
+
+/**/
+footer {
+    background-color: #ed0103;
+    color: #222;
+    padding: 2rem 1.5rem 2.5rem;
+    margin-top: 2rem;
+}
+
+footer .about {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+footer .about h1,
+footer .about h2 {
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.04em;
+}
+
+footer .about ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer .about li {
+    margin: 0;
+}
+
+footer .about a {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer .about a:hover {
+    color: #ffce53;
+}
+
+footer .about img {
+    display: block;
+    max-width: 90px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+footer .important {
+    max-width: 1000px;
+    margin: 1.5rem auto 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+@media (max-width: 720px) {
+    footer .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    footer .about a {
+        justify-self: center;
     }
 }
