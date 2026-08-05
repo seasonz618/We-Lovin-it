@@ -272,6 +272,36 @@
     accent-color: #ffbc0d;
 }
 
+.form .notes {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.food .setmeals,
+.food .burger,
+.food .sides,
+.food .drinks {
+    display: grid;
+    gap: 0.75rem;
+}
+
+/* Footer helper classes */
+.footerinf {
+    display: grid;
+    gap: 1rem;
+}
+
+.footersoci {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social img {
+    max-width: 110px;
+    height: auto;
+}
+
 .form button {
     display: inline-block;
     margin-top: 1rem;
