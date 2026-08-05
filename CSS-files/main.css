@@ -327,7 +327,7 @@ dt {
     padding: 5px;
     margin: 3px;
     border: 2px solid goldenrod;
-    color: orangered;
+    color: aliceblue;
     background: linear-gradient(
 rgba(255, 255, 0, 0.799), brown);
 }
@@ -349,7 +349,7 @@ dt {
     padding: 5px;
     margin: 3px;
     border: 2px solid goldenrod;
-    color: orangered;
+    color: aliceblue;
     background: linear-gradient(
 rgba(255, 255, 0, 0.799), brown);;
 }
@@ -372,7 +372,7 @@ dd{
     margin: auto;
     padding: 1px;
     margin: 1px;
-    border: 1px solid red;
+    border: 1px solid gold;
     background: linear-gradient(
         lavender, darkorange
     );
@@ -386,7 +386,7 @@ dd{
     margin: auto;
     padding: 1px;
     margin: 1px;
-    border: 1px solid red;
+    border: 1px solid silver;
     background: linear-gradient(
         crimson, violet
     );

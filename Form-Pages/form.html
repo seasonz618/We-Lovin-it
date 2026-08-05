@@ -8,13 +8,13 @@ content="width=device-width,
 initial-scale=1.0">
     <title>Feedback or Enquiries Form</title>
     <link rel="stylesheet" href="feedback or enquiries form.css">
-    </head>
-    <body>
+</head>
+<body>
 <nav class="top"><ul>
 
     <li><a href="../index.html">Home</a></li>
     <li><a href="../Products-Page/products.html">Menu</a></li>
-    <li><a href="#">Forms</a></li>
+    <li><a href="../Form-Pages/form.html">Forms</a></li>
     <li><a href="../Contacts-Us-Pages/contactus.html">Contacts</a></li>
 
 </ul></nav>
@@ -23,23 +23,21 @@ initial-scale=1.0">
     <p>How was your experience with us? Please fill out the form below to provide your feedback.</p>
         <form action="Feedback form thank you.html" method="get">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" size="30" placeholder="Enter your name" required title="hello">
+        <input type="text" id="name" name="name" size="30" placeholder="Enter your name" required title="Please fill in your name.">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" size="30" placeholder="example@email.com" required>
+        <input type="email" id="email" name="email" size="30" placeholder="example@email.com" required title="Please fill in your email.">
         <label for="form-type">What type of form do you want to send</label>
-        <select id="form-type"name="form-type" placeholder="Select an option" required>
+        <select id="form-type"name="form-type" required>
+          <option value=""disabled selected hidden>Select an option</option>
           <option value="feedback">Feedback</option>
           <option value="enquiry">Enquiry</option>
         </select>
         <label for="what feedback/enquiry would you like to ask" class="times-font">What feedback/enquiry would you like to ask:</label>
-        <textarea id="what feedback/enquiry would you like to ask" name="what feedback/enquiry would you like to ask" rows="4" cols="50" placeholder="Write your feedback/enquiries here" required></textarea>
-        
-        <br>
+        <textarea id="what feedback/enquiry would you like to ask" name="what feedback/enquiry would you like to ask" rows="4" cols="50" placeholder="Write your feedback/enquiries here" required title="Pleas fill in your feedback/enquiries."></textarea>
+        <div class="button-wrapper">
         <button type="submit">Submit</button>
-        <a href="../index.html">
-          <button type="button" class="form button">Back to Home</button>
-        </a>
+        <a href="../index.html"><button type="button" class="home-btn">Back to Home</button></a>
+        </div>
         </form>
-    </div>
 </body>
 </html>
