@@ -53,30 +53,38 @@
 
     <fieldset class="food">
         <h2>Menu</h2>
+
         <div class="burger">
             <h3>Mains</h3>
-            <label for="main">Burger</label>
-            <input type="checkbox" id="main" name="burgers" value="Burger">
+            <label for="main">Cheeseburger</label>
+            <input type="radio" id="main" name="main" value="Cheeseburger">
+            
+            <label for="main">Fried Chicken</label>
+            <input type="radio" id="main" name="main" value="Fried Chicken">
+
+            <label for="main">Happy Meal</label>
+            <input type="radio" id="main" name="main" value="Happy Meal">
         </div>
 
         <div class="side">
             <h3>Sides</h3>
             <label for="side">Fries</label>
-            <input type="checkbox" id="side" name="burgers" value="Fries">
+            <input type="radio" id="side" name="side" value="Fries">
+
+            <label for="side">Soft Serve</label>
+            <input type="radio" id="side" name="side" value="Soft Serve">
+
+            <label for="side">Apple Pie</label>
+            <input type="radio" id="side" name="side" value="Apple Pie">
+            
         </div>
 
         <div class="le_thirst_quenchers">
             <h3>Drinks</h3>
             <label for="drinks">Soda</label>
-            <input type="checkbox" id="drinks" name="burgers" value="Soda">
+            <input type="radio" id="drinks" name="drinks" value="Soda">
         </div>
     </fieldset>
-
-    <section class="ordnotes">
-        <h3>Special Requests</h3>
-        <label for="ordnotes">special requests</label>
-        <textarea id="ordnotes" name="orderNotes" rows="4" placeholder="Add any extra requests or dietary notes."></textarea>
-    </section>
 
     <button type="submit">Submit</button>
 </form>

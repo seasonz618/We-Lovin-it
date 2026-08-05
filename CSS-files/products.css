@@ -133,6 +133,25 @@
 	font-weight: 700;
 }
 
+@media (max-width: 720px) {
+
+	.table thead {
+	display: none;
+	}
+
+	.table tr {
+	display: block;
+	border-radius: 10px;
+	}
+
+	.table td {
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem;
+	}
+
+}
+
 @media (max-width: 520px) {
 
 	.header {
