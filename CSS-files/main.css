@@ -31,7 +31,7 @@ p {
     background-color: #ed0103;
     font-size: 1.7vw;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
 }
 /*Navi bar==========================================================================================================================================================*/
 nav ul { 
@@ -89,7 +89,6 @@ h1.title {
 div.looks {
     margin: 0 auto;
     width: 90vw;
-    height: 100%;
     display: flex;
     box-shadow: 4px 4px 10px;            /*gives the border a shadow*/
     background-color: aliceblue;
