@@ -382,6 +382,10 @@ dd{
     outline: 3px solid black;
     box-shadow: 10px 0 10px black;
 }
+.content{
+    height: auto;
+    width: 100%;
+}
 /* Team Information /=========================================================================================================================================*/
 .TI th {
    font-family: sans-serif;
