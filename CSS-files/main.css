@@ -24,14 +24,16 @@ p {
 }
 /*very important to not get copyrighted==================================================================================================================*/
 .important {
+    position: fixed;
     text-align: center;
     width: 100%;
     padding-bottom: 3%;
     margin: 0;
     background-color: #ed0103;
-    font-size: 1.7vw;
+    font-size: clamp(1rem, 1.7vw, none);
     font-weight: bold;
     text-decoration: none;
+    bottom: 0;
 }
 /*Navi bar==========================================================================================================================================================*/
 nav ul { 
@@ -139,6 +141,7 @@ p.style {
 /* Bottom bar for About us and Mcd Insta page============================================================================================================*/
 .about {
     display: flex;
+    padding-bottom: 10vh;
     margin: 0;
     align-items: center;
     justify-content: center;
